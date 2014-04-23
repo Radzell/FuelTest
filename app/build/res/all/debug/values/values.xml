@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string-array name="filters">
+        <item>All</item>
+        <item>Most Visited</item>
+        <item>Highly Rated</item>
+    </string-array>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/colors_foodietheme.xml -->
+    <eat-comment />
+
+    <color name="blue">#ff82e0ff</color>
+    <color name="foodietheme_color">#cc0000</color>
+    <color name="green">#ff8dd304</color>
+    <color name="grey">#ffd3d3d3</color>
+    <color name="list_item_pressed">#1A000000</color>
+    <color name="orange">#ffffdc7e</color>
+    <color name="red">#fff10800</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#fffffbae</color>
+    <!-- From: file:/home/radzell/Gigs/app/build/exploded-aar/com.etsy.android.grid/library/1.0.4/res/values/values.xml -->
+    <eat-comment />
+
+    <declare-styleable name="StaggeredGridView">
+        <attr name="column_count" format="integer" />
+        <attr name="column_count_portrait" format="integer" />
+        <attr name="column_count_landscape" format="integer" />
+        <attr name="item_margin" format="dimension" />
+        <attr name="grid_paddingLeft" format="dimension" />
+        <attr name="grid_paddingRight" format="dimension" />
+        <attr name="grid_paddingTop" format="dimension" />
+        <attr name="grid_paddingBottom" format="dimension" />
+    </declare-styleable>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tab_host_default_height">48dp</dimen>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="action_all">All</string>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment />
+
+    <string name="action_forgot_password">Recover lost password</string>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="action_highly_rated">Highly Rated</string>
+    <string name="action_most_visited">Most Visited</string>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment />
+
+    <string name="action_register"><b>Register</b></string>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="action_settings">Settings</string>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment />
+
+    <string name="action_sign_in"><b>Login</b></string>
+    <string name="action_sign_in_register"><b>Sign in</b> or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="action_submit">Submit</string>
+    <string name="add_restaurant">Add Restaurant</string>
+    <string name="app_name">Foodie</string>
+    <string name="comment">Comment</string>
+    <string name="createrestaurant">Create Resturant</string>
+    <string name="createreview">Create Review</string>
+    <string name="done">Done</string>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment />
+
+    <string name="error_field_required">This field is required</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="lastreview">Last Review</string>
+    <string name="latestreview">Latest Review</string>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment />
+
+    <string name="login_progress_registering">Registering…</string>
+    <string name="login_progress_signing_in">Signing in…</string>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="newreview">Write A New Review</string>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment />
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_name">Username</string>
+    <string name="prompt_password">Password</string>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="rating">Rating</string>
+    <string name="title">Title</string>
+    <string name="title_activity_create_review">CreateReviewActivity</string>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment />
+
+    <string name="title_activity_login">Welcome</string>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="title_activity_restaurant_category_grid">RestaurantCategoryGrid</string>
+    <string name="title_resturant_detail">Resturant Detail</string>
+    <string name="title_resturant_list">Resturants</string>
+    <string name="visits">Visits</string>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/styles_foodieactionbar.xml -->
+    <eat-comment />
+
+    <style name="ActionBar.Solid.Foodieactionbar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid_foodieactionbar</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_foodieactionbar</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_foodieactionbar</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Foodieactionbar</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Foodieactionbar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_foodieactionbar</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Foodieactionbar</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Foodieactionbar" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_foodieactionbar</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Foodieactionbar" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_foodieactionbar</item>
+    </style>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/styles_foodietheme.xml -->
+    <eat-comment />
+
+    <style name="AutoCompleteTextViewFoodieTheme" parent="android:Widget.Holo.Light.AutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/foodietheme_list_selector_holo_light</item>
+        <item name="android:background">@drawable/foodietheme_edit_text_holo_light</item>
+    </style>
+
+    <style name="ButtonFoodieTheme" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/foodietheme_btn_default_holo_light</item>
+    </style>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/styles_foodieactionbar.xml -->
+    <eat-comment />
+
+    <style name="DropDownListView.Foodieactionbar" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_foodieactionbar</item>
+    </style>
+
+    <style name="DropDownNav.Foodieactionbar" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_foodieactionbar</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_foodieactionbar</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_foodieactionbar</item>
+    </style>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/themes_foodietheme.xml -->
+    <eat-comment />
+
+    <style name="FoodieTheme" parent="@style/_FoodieTheme" />
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/styles_foodietheme.xml -->
+    <eat-comment />
+
+    <style name="ImageButtonFoodieTheme" parent="android:Widget.Holo.Light.ImageButton">
+        <item name="android:background">@drawable/foodietheme_btn_default_holo_light</item>
+    </style>
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/styles_foodieactionbar.xml -->
+    <eat-comment />
+
+    <style name="PopupMenu.Foodieactionbar" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_foodieactionbar</item>
+    </style>
+
+    <style name="ProgressBar.Foodieactionbar" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_foodieactionbar</item>
+    </style>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/styles_foodietheme.xml -->
+    <eat-comment />
+
+    <style name="ProgressBarFoodieTheme" parent="android:Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/foodietheme_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">            @drawable/foodietheme_progress_indeterminate_horizontal_holo_light</item>
+    </style>
+
+    <style name="RatingBarBigFoodieTheme" parent="android:Widget.Holo.Light.RatingBar.Indicator">
+        <item name="android:progressDrawable">@drawable/foodietheme_ratingbar_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/foodietheme_ratingbar_holo_light</item>
+    </style>
+
+    <style name="RatingBarFoodieTheme" parent="android:Widget.Holo.Light.RatingBar">
+        <item name="android:progressDrawable">@drawable/foodietheme_ratingbar_full_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/foodietheme_ratingbar_full_holo_light</item>
+    </style>
+
+    <style name="RatingBarSmallFoodieTheme" parent="android:Widget.Holo.Light.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/foodietheme_ratingbar_small_holo_light</item>
+        <item name="android:indeterminateDrawable">            @drawable/foodietheme_ratingbar_small_holo_light</item>
+    </style>
+
+    <style name="SeekBarFoodieTheme" parent="android:Widget.Holo.Light.SeekBar">
+        <item name="android:progressDrawable">            @drawable/foodietheme_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">            @drawable/foodietheme_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:thumb">@drawable/foodietheme_scrubber_control_selector_holo_light</item>
+    </style>
+
+    <style name="SpinnerFoodieTheme" parent="android:Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/foodietheme_spinner_background_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/foodietheme_list_selector_holo_light</item>
+    </style>
+
+    <style name="TabFoodieTheme">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:background">@drawable/foodietheme_tab_indicator_holo</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minWidth">80dip</item>
+    </style>
+
+    <style name="TabTextFoodieTheme">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <!-- v14 <item name="android:textAllCaps">true</item> -->
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:maxWidth">180dip</item>
+    </style>
+
+    <style name="TextButtonFoodieTheme" parent="android:Widget.Holo.Light.ImageButton">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@drawable/foodie_btn_text</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/styles_foodieactionbar.xml -->
+    <eat-comment />
+
+    <style name="Theme.Foodieactionbar" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_foodieactionbar</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Foodieactionbar</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Foodieactionbar</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Foodieactionbar</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Foodieactionbar</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Foodieactionbar</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_foodieactionbar</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_foodieactionbar</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Foodieactionbar</item>
+    </style>
+
+    <style name="Theme.Foodieactionbar.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Foodieactionbar</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Foodieactionbar</item>
+    </style>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/styles_foodietheme.xml -->
+    <eat-comment />
+
+    <style name="ToggleFoodieTheme" parent="android:Widget.Holo.Light.Button.Toggle">
+        <item name="android:background">@drawable/foodietheme_btn_toggle_holo_light</item>
+    </style>
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/themes_foodietheme.xml -->
+    <eat-comment />
+
+    <style name="_FoodieTheme" parent="Theme.Foodieactionbar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:editTextBackground">@drawable/foodietheme_edit_text_holo_light</item>
+        <item name="android:textColorHighlight">#99cc0000</item>
+        <item name="android:textSelectHandleLeft">@drawable/foodietheme_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/foodietheme_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/foodietheme_text_select_handle_middle</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewFoodieTheme</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/foodietheme_btn_check_holo_light</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/foodietheme_btn_radio_holo_light</item>
+        <item name="android:buttonStyle">@style/ButtonFoodieTheme</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonFoodieTheme</item>
+        <item name="android:dropDownSpinnerStyle">@style/SpinnerFoodieTheme</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBarFoodieTheme</item>
+        <item name="android:seekBarStyle">@style/SeekBarFoodieTheme</item>
+        <item name="android:ratingBarStyle">@style/RatingBarFoodieTheme</item>
+        <item name="android:ratingBarStyleIndicator">@style/RatingBarBigFoodieTheme</item>
+        <item name="android:ratingBarStyleSmall">@style/RatingBarSmallFoodieTheme</item>
+        <item name="android:buttonStyleToggle">@style/ToggleFoodieTheme</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/foodietheme_list_selector_holo_light</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/foodietheme_activated_background_holo_light</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/foodietheme_fastscroll_thumb_holo</item>
+    </style>
+
+</resources>

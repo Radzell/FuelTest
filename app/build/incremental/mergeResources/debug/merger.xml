@@ -1,0 +1,3410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="1.0.4" >
+        <source path="/home/radzell/Gigs/app/build/exploded-aar/com.etsy.android.grid/library/1.0.4/res" >
+            <file
+                path="/home/radzell/Gigs/app/build/exploded-aar/com.etsy.android.grid/library/1.0.4/res/values/values.xml"
+                qualifiers="" >
+                <declare-styleable name="StaggeredGridView" >
+                    <attr
+                        name="column_count"
+                        format="integer" />
+                    <attr
+                        name="column_count_portrait"
+                        format="integer" />
+                    <attr
+                        name="column_count_landscape"
+                        format="integer" />
+                    <attr
+                        name="item_margin"
+                        format="dimension" />
+                    <attr
+                        name="grid_paddingLeft"
+                        format="dimension" />
+                    <attr
+                        name="grid_paddingRight"
+                        format="dimension" />
+                    <attr
+                        name="grid_paddingTop"
+                        format="dimension" />
+                    <attr
+                        name="grid_paddingBottom"
+                        format="dimension" />
+                </declare-styleable>
+            </file>
+        </source>
+    </dataSet>
+    <dataSet config="main" >
+        <source path="/home/radzell/Gigs/app/src/main/res" >
+            <file
+                path="/home/radzell/Gigs/app/src/main/res/values-sw600dp/refs.xml"
+                qualifiers="sw600dp" >
+                <item
+                    name="activity_restaurant_list"
+                    type="layout">
+@layout/activity_restaurant_twopane
+                </item>
+            </file>
+            <file
+                path="/home/radzell/Gigs/app/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="createrestaurant" >Create Resturant
+                </string>
+                <string name="done" >Done
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="title_activity_create_review" >CreateReviewActivity
+                </string>
+                <string name="hello_blank_fragment" >Hello blank fragment
+                </string>
+                <string name="action_submit" >Submit
+                </string>
+                <string name="action_all" >All
+                </string>
+                <string name="title_activity_restaurant_category_grid" >RestaurantCategoryGrid
+                </string>
+                <string name="add_restaurant" >Add Restaurant
+                </string>
+                <string name="action_highly_rated" >Highly Rated
+                </string>
+                <string name="comment" >Comment
+                </string>
+                <string name="visits" >Visits
+                </string>
+                <string name="newreview" >Write A New Review
+                </string>
+                <string name="rating" >Rating
+                </string>
+                <string name="createreview" >Create Review
+                </string>
+                <string name="action_most_visited" >Most Visited
+                </string>
+                <string name="latestreview" >Latest Review
+                </string>
+                <string name="app_name" >Foodie
+                </string>
+                <string name="title" >Title
+                </string>
+                <string name="title_resturant_list" >Resturants
+                </string>
+                <string name="lastreview" >Last Review
+                </string>
+                <string name="title_resturant_detail" >Resturant Detail
+                </string>
+                <string name="hello_world" >Hello world!
+                </string>
+
+                <string-array name="filters" >
+                    <item>
+All
+                    </item>
+                    <item>
+Most Visited
+                    </item>
+                    <item>
+Highly Rated
+                    </item>
+                </string-array>
+            </file>
+            <file
+                path="/home/radzell/Gigs/app/src/main/res/values/styles_foodieactionbar.xml"
+                qualifiers="" >
+
+                <style
+                    name="ActionBarTabStyle.Foodieactionbar"
+                    parent="@android:style/Widget.Holo.Light.ActionBar.TabView" >
+                    <item name="android:background">
+@drawable/tab_indicator_ab_foodieactionbar
+                    </item>
+                </style>
+
+                <style
+                    name="Theme.Foodieactionbar"
+                    parent="@android:style/Theme.Holo.Light" >
+                    <item name="android:actionBarItemBackground">
+@drawable/selectable_background_foodieactionbar
+                    </item>
+                    <item name="android:popupMenuStyle">
+@style/PopupMenu.Foodieactionbar
+                    </item>
+                    <item name="android:dropDownListViewStyle">
+@style/DropDownListView.Foodieactionbar
+                    </item>
+                    <item name="android:actionBarTabStyle">
+@style/ActionBarTabStyle.Foodieactionbar
+                    </item>
+                    <item name="android:actionDropDownStyle">
+@style/DropDownNav.Foodieactionbar
+                    </item>
+                    <item name="android:actionBarStyle">
+@style/ActionBar.Solid.Foodieactionbar
+                    </item>
+                    <item name="android:actionModeBackground">
+@drawable/cab_background_top_foodieactionbar
+                    </item>
+                    <item name="android:actionModeSplitBackground">
+@drawable/cab_background_bottom_foodieactionbar
+                    </item>
+                    <item name="android:actionModeCloseButtonStyle">
+@style/ActionButton.CloseMode.Foodieactionbar
+                    </item>
+                </style>
+
+                <style
+                    name="ProgressBar.Foodieactionbar"
+                    parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal" >
+                    <item name="android:progressDrawable">
+@drawable/progress_horizontal_foodieactionbar
+                    </item>
+                </style>
+
+                <style
+                    name="ActionBar.Solid.Foodieactionbar"
+                    parent="@android:style/Widget.Holo.Light.ActionBar.Solid" >
+                    <item name="android:background">
+@drawable/ab_solid_foodieactionbar
+                    </item>
+                    <item name="android:backgroundStacked">
+@drawable/ab_stacked_solid_foodieactionbar
+                    </item>
+                    <item name="android:backgroundSplit">
+@drawable/ab_bottom_solid_foodieactionbar
+                    </item>
+                    <item name="android:progressBarStyle">
+@style/ProgressBar.Foodieactionbar
+                    </item>
+                </style>
+
+                <style
+                    name="ActionButton.CloseMode.Foodieactionbar"
+                    parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode" >
+                    <item name="android:background">
+@drawable/btn_cab_done_foodieactionbar
+                    </item>
+                </style>
+
+                <style
+                    name="DropDownListView.Foodieactionbar"
+                    parent="@android:style/Widget.Holo.Light.ListView.DropDown" >
+                    <item name="android:listSelector">
+@drawable/selectable_background_foodieactionbar
+                    </item>
+                </style>
+
+                <style
+                    name="ActionBar.Transparent.Foodieactionbar"
+                    parent="@android:style/Widget.Holo.Light.ActionBar" >
+                    <item name="android:background">
+@drawable/ab_transparent_foodieactionbar
+                    </item>
+                    <item name="android:progressBarStyle">
+@style/ProgressBar.Foodieactionbar
+                    </item>
+                </style>
+
+                <style
+                    name="DropDownNav.Foodieactionbar"
+                    parent="@android:style/Widget.Holo.Light.Spinner" >
+                    <item name="android:background">
+@drawable/spinner_background_ab_foodieactionbar
+                    </item>
+                    <item name="android:popupBackground">
+@drawable/menu_dropdown_panel_foodieactionbar
+                    </item>
+                    <item name="android:dropDownSelector">
+@drawable/selectable_background_foodieactionbar
+                    </item>
+                </style>
+
+                <style
+                    name="PopupMenu.Foodieactionbar"
+                    parent="@android:style/Widget.Holo.Light.ListPopupWindow" >
+                    <item name="android:popupBackground">
+@drawable/menu_dropdown_panel_foodieactionbar
+                    </item>
+                </style>
+
+                <style
+                    name="Theme.Foodieactionbar.Widget"
+                    parent="@android:style/Theme.Holo" >
+                    <item name="android:popupMenuStyle">
+@style/PopupMenu.Foodieactionbar
+                    </item>
+                    <item name="android:dropDownListViewStyle">
+@style/DropDownListView.Foodieactionbar
+                    </item>
+                </style>
+            </file>
+            <file
+                path="/home/radzell/Gigs/app/src/main/res/values/strings_activity_login.xml"
+                qualifiers="" >
+                <string name="login_progress_registering" >Registering…
+                </string>
+                <string name="prompt_email" >Email
+                </string>
+                <string name="login_progress_signing_in" >Signing in…
+                </string>
+                <string name="action_sign_in_short" >Sign in
+                </string>
+                <string name="prompt_name" >Username
+                </string>
+                <string name="action_sign_in" ><b>
+Login
+                    </b></string>
+                <string name="error_field_required" >This field is required
+                </string>
+                <string name="error_invalid_email" >This email address is invalid
+                </string>
+                <string name="action_sign_in_register" ><b>
+Sign in
+                    </b> or register
+                </string>
+                <string name="prompt_password" >Password
+                </string>
+                <string name="error_incorrect_password" >This password is incorrect
+                </string>
+                <string name="action_forgot_password" >Recover lost password
+                </string>
+                <string name="title_activity_login" >Welcome
+                </string>
+                <string name="error_invalid_password" >This password is too short
+                </string>
+                <string name="action_register" ><b>
+Register
+                    </b></string>
+            </file>
+            <file
+                path="/home/radzell/Gigs/app/src/main/res/values/themes_foodietheme.xml"
+                qualifiers="" >
+
+                <style
+                    name="FoodieTheme"
+                    parent="@style/_FoodieTheme" />
+
+                <style
+                    name="_FoodieTheme"
+                    parent="Theme.Foodieactionbar" >
+                    <item name="android:windowBackground">
+@color/white
+                    </item>
+                    <item name="android:editTextBackground">
+@drawable/foodietheme_edit_text_holo_light
+                    </item>
+                    <item name="android:textColorHighlight">
+#99cc0000
+                    </item>
+                    <item name="android:textSelectHandleLeft">
+@drawable/foodietheme_text_select_handle_left
+                    </item>
+                    <item name="android:textSelectHandleRight">
+@drawable/foodietheme_text_select_handle_right
+                    </item>
+                    <item name="android:textSelectHandle">
+@drawable/foodietheme_text_select_handle_middle
+                    </item>
+                    <item name="android:autoCompleteTextViewStyle">
+@style/AutoCompleteTextViewFoodieTheme
+                    </item>
+                    <item name="android:listChoiceIndicatorMultiple">
+@drawable/foodietheme_btn_check_holo_light
+                    </item>
+                    <item name="android:listChoiceIndicatorSingle">
+@drawable/foodietheme_btn_radio_holo_light
+                    </item>
+                    <item name="android:buttonStyle">
+@style/ButtonFoodieTheme
+                    </item>
+                    <item name="android:imageButtonStyle">
+@style/ImageButtonFoodieTheme
+                    </item>
+                    <item name="android:dropDownSpinnerStyle">
+@style/SpinnerFoodieTheme
+                    </item>
+                    <item name="android:progressBarStyleHorizontal">
+@style/ProgressBarFoodieTheme
+                    </item>
+                    <item name="android:seekBarStyle">
+@style/SeekBarFoodieTheme
+                    </item>
+                    <item name="android:ratingBarStyle">
+@style/RatingBarFoodieTheme
+                    </item>
+                    <item name="android:ratingBarStyleIndicator">
+@style/RatingBarBigFoodieTheme
+                    </item>
+                    <item name="android:ratingBarStyleSmall">
+@style/RatingBarSmallFoodieTheme
+                    </item>
+                    <item name="android:buttonStyleToggle">
+@style/ToggleFoodieTheme
+                    </item>
+                    <item name="android:listChoiceBackgroundIndicator">
+@drawable/foodietheme_list_selector_holo_light
+                    </item>
+                    <item name="android:activatedBackgroundIndicator">
+@drawable/foodietheme_activated_background_holo_light
+                    </item>
+                    <item name="android:fastScrollThumbDrawable">
+@drawable/foodietheme_fastscroll_thumb_holo
+                    </item>
+                </style>
+            </file>
+            <file
+                path="/home/radzell/Gigs/app/src/main/res/values/styles_foodietheme.xml"
+                qualifiers="" >
+
+                <style name="TabTextFoodieTheme" >
+                    <item name="android:textColor">
+#000000
+                    </item>
+                    <item name="android:textSize">
+12sp
+                    </item>
+                    <item name="android:textStyle">
+bold
+                    </item>
+                    <!-- v14 <item name="android:textAllCaps">true</item> -->
+                    <item name="android:ellipsize">
+marquee
+                    </item>
+                    <item name="android:maxLines">
+2
+                    </item>
+                    <item name="android:maxWidth">
+180dip
+                    </item>
+                </style>
+
+                <style
+                    name="ImageButtonFoodieTheme"
+                    parent="android:Widget.Holo.Light.ImageButton" >
+                    <item name="android:background">
+@drawable/foodietheme_btn_default_holo_light
+                    </item>
+                </style>
+
+                <style
+                    name="SpinnerFoodieTheme"
+                    parent="android:Widget.Holo.Light.Spinner" >
+                    <item name="android:background">
+@drawable/foodietheme_spinner_background_holo_light
+                    </item>
+                    <item name="android:dropDownSelector">
+@drawable/foodietheme_list_selector_holo_light
+                    </item>
+                </style>
+
+                <style
+                    name="ProgressBarFoodieTheme"
+                    parent="android:Widget.Holo.Light.ProgressBar.Horizontal" >
+                    <item name="android:progressDrawable">
+@drawable/foodietheme_progress_horizontal_holo_light
+                    </item>
+                    <item name="android:indeterminateDrawable">
+            @drawable/foodietheme_progress_indeterminate_horizontal_holo_light
+                    </item>
+                </style>
+
+                <style
+                    name="ToggleFoodieTheme"
+                    parent="android:Widget.Holo.Light.Button.Toggle" >
+                    <item name="android:background">
+@drawable/foodietheme_btn_toggle_holo_light
+                    </item>
+                </style>
+
+                <style
+                    name="RatingBarBigFoodieTheme"
+                    parent="android:Widget.Holo.Light.RatingBar.Indicator" >
+                    <item name="android:progressDrawable">
+@drawable/foodietheme_ratingbar_holo_light
+                    </item>
+                    <item name="android:indeterminateDrawable">
+@drawable/foodietheme_ratingbar_holo_light
+                    </item>
+                </style>
+
+                <style
+                    name="TextButtonFoodieTheme"
+                    parent="android:Widget.Holo.Light.ImageButton" >
+                    <item name="android:textStyle">
+bold
+                    </item>
+                    <item name="android:textColor">
+@drawable/foodie_btn_text
+                    </item>
+                    <item name="android:background">
+@android:color/transparent
+                    </item>
+                </style>
+
+                <style
+                    name="RatingBarSmallFoodieTheme"
+                    parent="android:Widget.Holo.Light.RatingBar.Small" >
+                    <item name="android:progressDrawable">
+@drawable/foodietheme_ratingbar_small_holo_light
+                    </item>
+                    <item name="android:indeterminateDrawable">
+            @drawable/foodietheme_ratingbar_small_holo_light
+                    </item>
+                </style>
+
+                <style
+                    name="ButtonFoodieTheme"
+                    parent="android:Widget.Holo.Light.Button" >
+                    <item name="android:background">
+@drawable/foodietheme_btn_default_holo_light
+                    </item>
+                </style>
+
+                <style
+                    name="RatingBarFoodieTheme"
+                    parent="android:Widget.Holo.Light.RatingBar" >
+                    <item name="android:progressDrawable">
+@drawable/foodietheme_ratingbar_full_holo_light
+                    </item>
+                    <item name="android:indeterminateDrawable">
+@drawable/foodietheme_ratingbar_full_holo_light
+                    </item>
+                </style>
+
+                <style
+                    name="AutoCompleteTextViewFoodieTheme"
+                    parent="android:Widget.Holo.Light.AutoCompleteTextView" >
+                    <item name="android:dropDownSelector">
+@drawable/foodietheme_list_selector_holo_light
+                    </item>
+                    <item name="android:background">
+@drawable/foodietheme_edit_text_holo_light
+                    </item>
+                </style>
+
+                <style name="TabFoodieTheme" >
+                    <item name="android:gravity">
+center_horizontal
+                    </item>
+                    <item name="android:paddingLeft">
+16dip
+                    </item>
+                    <item name="android:paddingRight">
+16dip
+                    </item>
+                    <item name="android:background">
+@drawable/foodietheme_tab_indicator_holo
+                    </item>
+                    <item name="android:layout_width">
+0dip
+                    </item>
+                    <item name="android:layout_weight">
+1
+                    </item>
+                    <item name="android:minWidth">
+80dip
+                    </item>
+                </style>
+
+                <style
+                    name="SeekBarFoodieTheme"
+                    parent="android:Widget.Holo.Light.SeekBar" >
+                    <item name="android:progressDrawable">
+            @drawable/foodietheme_scrubber_progress_horizontal_holo_light
+                    </item>
+                    <item name="android:indeterminateDrawable">
+            @drawable/foodietheme_scrubber_progress_horizontal_holo_light
+                    </item>
+                    <item name="android:thumb">
+@drawable/foodietheme_scrubber_control_selector_holo_light
+                    </item>
+                </style>
+
+                <style name="LoginFormContainer" >
+                    <item name="android:layout_width">
+match_parent
+                    </item>
+                    <item name="android:layout_height">
+wrap_content
+                    </item>
+                    <item name="android:padding">
+16dp
+                    </item>
+                </style>
+            </file>
+            <file
+                path="/home/radzell/Gigs/app/src/main/res/values/colors_foodietheme.xml"
+                qualifiers="" >
+                <color name="grey" >#ffd3d3d3
+                </color>
+                <color name="foodietheme_color" >#cc0000
+                </color>
+                <color name="green" >#ff8dd304
+                </color>
+                <color name="blue" >#ff82e0ff
+                </color>
+                <color name="white" >#FFFFFFFF
+                </color>
+                <color name="list_item_pressed" >#1A000000
+                </color>
+                <color name="red" >#fff10800
+                </color>
+                <color name="orange" >#ffffdc7e
+                </color>
+                <color name="yellow" >#fffffbae
+                </color>
+            </file>
+            <file
+                path="/home/radzell/Gigs/app/src/main/res/values/dimens.xml"
+                qualifiers="" >
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+                <dimen name="tab_host_default_height" >48dp
+                </dimen>
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+            </file>
+            <file
+                name="activity_restaurant_detail"
+                path="/home/radzell/Gigs/app/src/main/res/layout/activity_restaurant_detail.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="foodietheme_tab_indicator_holo"
+                path="/home/radzell/Gigs/app/src/main/res/layout/foodietheme_tab_indicator_holo.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="actionbartitle"
+                path="/home/radzell/Gigs/app/src/main/res/layout/actionbartitle.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="fragment_restaurant_detail"
+                path="/home/radzell/Gigs/app/src/main/res/layout/fragment_restaurant_detail.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_restaurant_grid"
+                path="/home/radzell/Gigs/app/src/main/res/layout/activity_restaurant_grid.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_restaurant_twopane"
+                path="/home/radzell/Gigs/app/src/main/res/layout/activity_restaurant_twopane.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="fragment_restaurant_grid_item"
+                path="/home/radzell/Gigs/app/src/main/res/layout/fragment_restaurant_grid_item.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="list_item_header_footer"
+                path="/home/radzell/Gigs/app/src/main/res/layout/list_item_header_footer.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_login"
+                path="/home/radzell/Gigs/app/src/main/res/layout/activity_login.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_create_restaurant_view"
+                path="/home/radzell/Gigs/app/src/main/res/layout/activity_create_restaurant_view.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_create_review_view"
+                path="/home/radzell/Gigs/app/src/main/res/layout/activity_create_review_view.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="fragment_restaurant_grid"
+                path="/home/radzell/Gigs/app/src/main/res/layout/fragment_restaurant_grid.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="ic_launcher"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxxhdpi/ic_launcher.png"
+                qualifiers="xxxhdpi"
+                type="drawable" />
+            <file
+                path="/home/radzell/Gigs/app/src/main/res/values-sw720dp-land/dimens.xml"
+                qualifiers="sw720dp-land" >
+                <dimen name="activity_horizontal_margin" >128dp
+                </dimen>
+            </file>
+            <file
+                name="foodietheme_switch_thumb_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_switch_thumb_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_default_pressed_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_off_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_rating_star_off_normal_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="spinner_ab_default_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/spinner_ab_default_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_bg_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_switch_bg_focused_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="progress_bg_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/progress_bg_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="progress_primary_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/progress_primary_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="progress_secondary_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/progress_secondary_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_primary_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_scrubber_primary_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_cab_done_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/btn_cab_done_focused_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_textfield_disabled_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="tab_selected_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/tab_selected_pressed_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="menu_dropdown_panel_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/menu_dropdown_panel_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="tab_unselected_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/tab_unselected_focused_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_spinner_disabled_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_small_off_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_rate_star_small_off_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ab_bottom_solid_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/ab_bottom_solid_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_unselected_focused_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_tab_unselected_focused_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_radio_on_disabled_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_secondary_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_scrubber_secondary_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_text_select_handle_middle"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_text_select_handle_middle.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_radio_off_pressed_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_small_half_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_rate_star_small_half_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_selected_focused_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_tab_selected_focused_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo3"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_progressbar_indeterminate_holo3.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="cab_background_bottom_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/cab_background_bottom_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progress_secondary_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_progress_secondary_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ab_solid_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/ab_solid_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_radio_off_disabled_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_check_off_disabled_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="cab_background_top_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/cab_background_top_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="spinner_ab_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/spinner_ab_pressed_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_check_off_pressed_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_normal_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_scrubber_control_normal_holo.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="list_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/list_pressed_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_toggle_on_pressed_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_on_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_rating_star_on_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_default_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_textfield_default_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_off_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_rating_star_off_pressed_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_cab_done_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/btn_cab_done_pressed_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_radio_on_pressed_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_thumb_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_switch_thumb_disabled_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo6"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_progressbar_indeterminate_holo6.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_thumb_activated_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_switch_thumb_activated_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_radio_on_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_focused_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_scrubber_control_focused_holo.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_text_select_handle_left"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_text_select_handle_left.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_toggle_off_normal_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_pressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_scrubber_control_pressed_holo.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo4"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_progressbar_indeterminate_holo4.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_textfield_focused_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_check_off_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="tab_selected_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/tab_selected_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_radio_off_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_list_pressed_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_default_focused_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_check_on_disabled_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_bg_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_switch_bg_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="spinner_ab_disabled_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/spinner_ab_disabled_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_activated_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_textfield_activated_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_longpressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_list_longpressed_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_toggle_on_normal_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo8"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_progressbar_indeterminate_holo8.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ab_texture_tile_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/ab_texture_tile_foodieactionbar.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_check_on_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo1"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_progressbar_indeterminate_holo1.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_text_select_handle_right"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_text_select_handle_right.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_radio_on_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_big_off_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_rate_star_big_off_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ab_transparent_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/ab_transparent_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_activated_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_list_activated_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_toggle_on_focused_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_big_on_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_rate_star_big_on_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="tab_unselected_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/tab_unselected_pressed_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_on_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_rating_star_on_normal_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_ic_navigation_drawer"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_ic_navigation_drawer.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_bg_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_switch_bg_disabled_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_toggle_on_disabled_focused_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_spinner_pressed_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_default_normal_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_default_disabled_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progress_bg_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_progress_bg_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_toggle_off_disabled_focused_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_fastscroll_thumb_default_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_fastscroll_thumb_default_holo.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_unselected_pressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_tab_unselected_pressed_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_cab_done_default_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/btn_cab_done_default_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ab_stacked_solid_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/ab_stacked_solid_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_toggle_off_focused_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="list_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/list_focused_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_selector_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_list_selector_disabled_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_toggle_off_pressed_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_default_disabled_focused_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_check_off_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_radio_off_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_small_on_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_rate_star_small_on_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_toggle_off_disabled_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_textfield_disabled_focused_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_spinner_focused_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_check_on_pressed_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_default_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_spinner_default_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_check_on_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_check_on_disabled_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progress_primary_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_progress_primary_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_off_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_rating_star_off_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="tab_selected_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/tab_selected_focused_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_selected_pressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_tab_selected_pressed_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo7"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_progressbar_indeterminate_holo7.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_radio_on_disabled_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo5"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_progressbar_indeterminate_holo5.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_thumb_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_switch_thumb_pressed_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_disabled_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_scrubber_control_disabled_holo.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_radio_off_disabled_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_toggle_on_disabled_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="spinner_ab_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/spinner_ab_focused_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_fastscroll_thumb_pressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_fastscroll_thumb_pressed_holo.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="tab_unselected_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/tab_unselected_foodieactionbar.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_selected_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_tab_selected_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo2"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_progressbar_indeterminate_holo2.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_check_off_disabled_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_track_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_scrubber_track_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_big_half_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_rate_star_big_half_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_focused_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_list_focused_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_unselected_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_tab_unselected_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_on_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xhdpi/foodietheme_btn_rating_star_on_pressed_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                path="/home/radzell/Gigs/app/src/main/res/values-v11/styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                name="foodietheme_switch_thumb_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_switch_thumb_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_default_pressed_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_off_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_rating_star_off_normal_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="spinner_ab_default_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/spinner_ab_default_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_bg_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_switch_bg_focused_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="progress_bg_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/progress_bg_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="progress_primary_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/progress_primary_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="progress_secondary_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/progress_secondary_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_primary_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_scrubber_primary_holo.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="btn_cab_done_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/btn_cab_done_focused_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_textfield_disabled_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="tab_selected_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/tab_selected_pressed_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="menu_dropdown_panel_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/menu_dropdown_panel_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="tab_unselected_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/tab_unselected_focused_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_spinner_disabled_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_small_off_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_rate_star_small_off_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="ab_bottom_solid_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/ab_bottom_solid_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_unselected_focused_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_tab_unselected_focused_holo.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_radio_on_disabled_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_secondary_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_scrubber_secondary_holo.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_text_select_handle_middle"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_text_select_handle_middle.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_radio_off_pressed_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_small_half_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_rate_star_small_half_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_selected_focused_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_tab_selected_focused_holo.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo3"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_progressbar_indeterminate_holo3.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="cab_background_bottom_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/cab_background_bottom_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progress_secondary_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_progress_secondary_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="ab_solid_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/ab_solid_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_radio_off_disabled_focused_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_check_off_disabled_focused_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="cab_background_top_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/cab_background_top_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="spinner_ab_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/spinner_ab_pressed_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_check_off_pressed_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_normal_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_scrubber_control_normal_holo.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="list_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/list_pressed_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_toggle_on_pressed_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_on_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_rating_star_on_focused_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_default_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_textfield_default_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_off_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_rating_star_off_pressed_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="btn_cab_done_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/btn_cab_done_pressed_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_radio_on_pressed_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_thumb_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_switch_thumb_disabled_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo6"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_progressbar_indeterminate_holo6.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_thumb_activated_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_switch_thumb_activated_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_radio_on_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_focused_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_scrubber_control_focused_holo.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_text_select_handle_left"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_text_select_handle_left.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_toggle_off_normal_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_pressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_scrubber_control_pressed_holo.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo4"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_progressbar_indeterminate_holo4.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_textfield_focused_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_check_off_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="tab_selected_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/tab_selected_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_radio_off_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_list_pressed_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_default_focused_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_check_on_disabled_focused_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_bg_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_switch_bg_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="spinner_ab_disabled_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/spinner_ab_disabled_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_activated_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_textfield_activated_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_longpressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_list_longpressed_holo.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_toggle_on_normal_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo8"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_progressbar_indeterminate_holo8.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="ab_texture_tile_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/ab_texture_tile_foodieactionbar.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_check_on_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo1"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_progressbar_indeterminate_holo1.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_text_select_handle_right"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_text_select_handle_right.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_radio_on_focused_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_big_off_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_rate_star_big_off_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="ab_transparent_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/ab_transparent_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_activated_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_list_activated_holo.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_toggle_on_focused_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_big_on_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_rate_star_big_on_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="tab_unselected_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/tab_unselected_pressed_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_on_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_rating_star_on_normal_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_ic_navigation_drawer"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_ic_navigation_drawer.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_bg_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_switch_bg_disabled_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_toggle_on_disabled_focused_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_spinner_pressed_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_default_normal_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_default_disabled_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progress_bg_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_progress_bg_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_toggle_off_disabled_focused_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_fastscroll_thumb_default_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_fastscroll_thumb_default_holo.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_unselected_pressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_tab_unselected_pressed_holo.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="btn_cab_done_default_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/btn_cab_done_default_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="ab_stacked_solid_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/ab_stacked_solid_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_toggle_off_focused_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="list_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/list_focused_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_selector_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_list_selector_disabled_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_toggle_off_pressed_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_default_disabled_focused_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_check_off_focused_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_radio_off_focused_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_small_on_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_rate_star_small_on_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_toggle_off_disabled_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_textfield_disabled_focused_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_spinner_focused_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_check_on_pressed_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_default_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_spinner_default_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_check_on_focused_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_check_on_disabled_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progress_primary_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_progress_primary_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_off_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_rating_star_off_focused_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="tab_selected_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/tab_selected_focused_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_selected_pressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_tab_selected_pressed_holo.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo7"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_progressbar_indeterminate_holo7.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_radio_on_disabled_focused_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo5"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_progressbar_indeterminate_holo5.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_thumb_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_switch_thumb_pressed_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_disabled_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_scrubber_control_disabled_holo.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_radio_off_disabled_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_toggle_on_disabled_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="spinner_ab_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/spinner_ab_focused_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_fastscroll_thumb_pressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_fastscroll_thumb_pressed_holo.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="tab_unselected_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/tab_unselected_foodieactionbar.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_selected_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_tab_selected_holo.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo2"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_progressbar_indeterminate_holo2.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_check_off_disabled_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_track_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_scrubber_track_holo_light.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_big_half_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_rate_star_big_half_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_focused_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_list_focused_holo.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_unselected_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_tab_unselected_holo.9.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_on_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-xxhdpi/foodietheme_btn_rating_star_on_pressed_holo_light.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_thumb_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_switch_thumb_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_default_pressed_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_off_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_rating_star_off_normal_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="spinner_ab_default_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/spinner_ab_default_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_bg_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_switch_bg_focused_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="progress_bg_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/progress_bg_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="progress_primary_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/progress_primary_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="progress_secondary_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/progress_secondary_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_primary_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_scrubber_primary_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_cab_done_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/btn_cab_done_focused_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_textfield_disabled_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="tab_selected_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/tab_selected_pressed_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="menu_dropdown_panel_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/menu_dropdown_panel_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="tab_unselected_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/tab_unselected_focused_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_spinner_disabled_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_small_off_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_rate_star_small_off_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ab_bottom_solid_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/ab_bottom_solid_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_unselected_focused_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_tab_unselected_focused_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_radio_on_disabled_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_secondary_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_scrubber_secondary_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_text_select_handle_middle"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_text_select_handle_middle.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_radio_off_pressed_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_small_half_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_rate_star_small_half_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_selected_focused_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_tab_selected_focused_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo3"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_progressbar_indeterminate_holo3.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="cab_background_bottom_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/cab_background_bottom_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progress_secondary_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_progress_secondary_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ab_solid_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/ab_solid_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_radio_off_disabled_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_check_off_disabled_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="cab_background_top_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/cab_background_top_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="spinner_ab_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/spinner_ab_pressed_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_check_off_pressed_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_normal_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_scrubber_control_normal_holo.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="list_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/list_pressed_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_toggle_on_pressed_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_on_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_rating_star_on_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_default_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_textfield_default_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_off_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_rating_star_off_pressed_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_cab_done_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/btn_cab_done_pressed_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_radio_on_pressed_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_thumb_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_switch_thumb_disabled_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo6"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_progressbar_indeterminate_holo6.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_thumb_activated_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_switch_thumb_activated_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_radio_on_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_focused_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_scrubber_control_focused_holo.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_text_select_handle_left"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_text_select_handle_left.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_toggle_off_normal_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_pressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_scrubber_control_pressed_holo.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo4"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_progressbar_indeterminate_holo4.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_textfield_focused_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_check_off_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="tab_selected_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/tab_selected_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_radio_off_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_list_pressed_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_default_focused_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_check_on_disabled_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_bg_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_switch_bg_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="spinner_ab_disabled_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/spinner_ab_disabled_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_activated_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_textfield_activated_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_longpressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_list_longpressed_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_toggle_on_normal_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo8"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_progressbar_indeterminate_holo8.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ab_texture_tile_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/ab_texture_tile_foodieactionbar.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_check_on_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo1"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_progressbar_indeterminate_holo1.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_text_select_handle_right"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_text_select_handle_right.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_radio_on_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_big_off_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_rate_star_big_off_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ab_transparent_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/ab_transparent_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_activated_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_list_activated_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_toggle_on_focused_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_big_on_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_rate_star_big_on_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="tab_unselected_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/tab_unselected_pressed_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_on_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_rating_star_on_normal_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_ic_navigation_drawer"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_ic_navigation_drawer.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_bg_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_switch_bg_disabled_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_toggle_on_disabled_focused_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_spinner_pressed_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_default_normal_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_default_disabled_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progress_bg_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_progress_bg_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_toggle_off_disabled_focused_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_fastscroll_thumb_default_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_fastscroll_thumb_default_holo.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_unselected_pressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_tab_unselected_pressed_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_cab_done_default_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/btn_cab_done_default_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ab_stacked_solid_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/ab_stacked_solid_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_toggle_off_focused_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="list_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/list_focused_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_selector_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_list_selector_disabled_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_toggle_off_pressed_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_default_disabled_focused_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_check_off_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_radio_off_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_small_on_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_rate_star_small_on_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_toggle_off_disabled_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_textfield_disabled_focused_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_spinner_focused_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_check_on_pressed_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_default_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_spinner_default_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_check_on_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_check_on_disabled_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progress_primary_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_progress_primary_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_off_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_rating_star_off_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="tab_selected_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/tab_selected_focused_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_selected_pressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_tab_selected_pressed_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo7"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_progressbar_indeterminate_holo7.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_radio_on_disabled_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo5"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_progressbar_indeterminate_holo5.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_thumb_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_switch_thumb_pressed_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_disabled_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_scrubber_control_disabled_holo.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_radio_off_disabled_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_toggle_on_disabled_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="spinner_ab_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/spinner_ab_focused_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_fastscroll_thumb_pressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_fastscroll_thumb_pressed_holo.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="tab_unselected_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/tab_unselected_foodieactionbar.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_selected_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_tab_selected_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo2"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_progressbar_indeterminate_holo2.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_check_off_disabled_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_track_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_scrubber_track_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_big_half_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_rate_star_big_half_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_focused_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_list_focused_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_unselected_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_tab_unselected_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_on_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-mdpi/foodietheme_btn_rating_star_on_pressed_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                path="/home/radzell/Gigs/app/src/main/res/values-large/styles.xml"
+                qualifiers="large" >
+
+                <style name="LoginFormContainer" >
+                    <item name="android:layout_width">
+400dp
+                    </item>
+                    <item name="android:layout_height">
+wrap_content
+                    </item>
+                    <item name="android:layout_gravity">
+center
+                    </item>
+                    <item name="android:padding">
+16dp
+                    </item>
+                </style>
+            </file>
+            <file
+                path="/home/radzell/Gigs/app/src/main/res/values-large/refs.xml"
+                qualifiers="large" >
+                <item
+                    name="activity_restaurant_list"
+                    type="layout">
+@layout/activity_restaurant_twopane
+                </item>
+            </file>
+            <file
+                path="/home/radzell/Gigs/app/src/main/res/values-v14/styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- API 14 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                name="foodietheme_btn_radio_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_btn_radio_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_btn_check_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="imgg"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/imgg.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_activated_background_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_activated_background_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="imga"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/imga.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_btn_default_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_item_background_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_item_background_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_ratingbar_full_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_ratingbar_full_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_list_selector_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_list_selector_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="selectable_background_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/selectable_background_foodieactionbar.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_list_selector_background_transition_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_list_selector_background_transition_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_tab_indicator_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_tab_indicator_holo.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ab_background_textured_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/ab_background_textured_foodieactionbar.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="progress_horizontal_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/progress_horizontal_foodieactionbar.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_edit_text_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_edit_text_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="bigwindowbackground"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/bigwindowbackground"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="imgc"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/imgc.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_selector_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_scrubber_control_selector_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_background_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_spinner_background_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_ratingbar_small_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_ratingbar_small_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_progress_indeterminate_horizontal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_progress_indeterminate_horizontal_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="tab_indicator_ab_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/tab_indicator_ab_foodieactionbar.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="imgd"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/imgd.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="imgf"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/imgf.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="imgb"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/imgb.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_switch_track_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_switch_track_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_ratingbar_full_filled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_ratingbar_full_filled_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="imge"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/imge.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_btn_toggle_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_ratingbar_full_empty_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_ratingbar_full_empty_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="background_card"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/background_card.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_fastscroll_thumb_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_fastscroll_thumb_holo.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_switch_inner_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_switch_inner_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_progress_horizontal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_scrubber_progress_horizontal_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_progress_horizontal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_progress_horizontal_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="spinner_background_ab_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/spinner_background_ab_foodieactionbar.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodie_btn_text"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodie_btn_text.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_ratingbar_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/foodietheme_ratingbar_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="btn_cab_done_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable/btn_cab_done_foodieactionbar.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="foodietheme_switch_thumb_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_switch_thumb_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_default_pressed_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_off_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_rating_star_off_normal_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="spinner_ab_default_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/spinner_ab_default_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_bg_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_switch_bg_focused_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="progress_bg_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/progress_bg_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="progress_primary_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/progress_primary_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="progress_secondary_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/progress_secondary_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_primary_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_scrubber_primary_holo.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_cab_done_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/btn_cab_done_focused_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_textfield_disabled_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="tab_selected_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/tab_selected_pressed_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="menu_dropdown_panel_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/menu_dropdown_panel_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="tab_unselected_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/tab_unselected_focused_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_spinner_disabled_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_small_off_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_rate_star_small_off_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ab_bottom_solid_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/ab_bottom_solid_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_unselected_focused_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_tab_unselected_focused_holo.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_radio_on_disabled_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_secondary_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_scrubber_secondary_holo.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_text_select_handle_middle"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_text_select_handle_middle.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_radio_off_pressed_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_small_half_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_rate_star_small_half_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_selected_focused_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_tab_selected_focused_holo.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo3"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_progressbar_indeterminate_holo3.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="cab_background_bottom_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/cab_background_bottom_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progress_secondary_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_progress_secondary_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ab_solid_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/ab_solid_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_radio_off_disabled_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_check_off_disabled_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="cab_background_top_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/cab_background_top_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="spinner_ab_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/spinner_ab_pressed_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_check_off_pressed_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_normal_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_scrubber_control_normal_holo.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="list_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/list_pressed_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_toggle_on_pressed_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_on_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_rating_star_on_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_default_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_textfield_default_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_off_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_rating_star_off_pressed_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_cab_done_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/btn_cab_done_pressed_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_radio_on_pressed_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_thumb_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_switch_thumb_disabled_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo6"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_progressbar_indeterminate_holo6.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_thumb_activated_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_switch_thumb_activated_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_radio_on_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_focused_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_scrubber_control_focused_holo.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_text_select_handle_left"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_text_select_handle_left.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_toggle_off_normal_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_pressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_scrubber_control_pressed_holo.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo4"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_progressbar_indeterminate_holo4.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_textfield_focused_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_check_off_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="tab_selected_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/tab_selected_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_radio_off_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_list_pressed_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_default_focused_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_check_on_disabled_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_bg_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_switch_bg_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="spinner_ab_disabled_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/spinner_ab_disabled_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_activated_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_textfield_activated_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_longpressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_list_longpressed_holo.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_toggle_on_normal_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo8"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_progressbar_indeterminate_holo8.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ab_texture_tile_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/ab_texture_tile_foodieactionbar.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_check_on_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo1"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_progressbar_indeterminate_holo1.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_text_select_handle_right"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_text_select_handle_right.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_radio_on_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_big_off_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_rate_star_big_off_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ab_transparent_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/ab_transparent_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_activated_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_list_activated_holo.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_toggle_on_focused_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_big_on_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_rate_star_big_on_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="tab_unselected_pressed_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/tab_unselected_pressed_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_on_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_rating_star_on_normal_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_ic_navigation_drawer"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_ic_navigation_drawer.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_bg_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_switch_bg_disabled_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_toggle_on_disabled_focused_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_spinner_pressed_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_normal_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_default_normal_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_default_disabled_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progress_bg_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_progress_bg_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_toggle_off_disabled_focused_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_fastscroll_thumb_default_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_fastscroll_thumb_default_holo.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_unselected_pressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_tab_unselected_pressed_holo.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_cab_done_default_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/btn_cab_done_default_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ab_stacked_solid_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/ab_stacked_solid_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_toggle_off_focused_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="list_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/list_focused_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_selector_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_list_selector_disabled_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_toggle_off_pressed_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_default_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_default_disabled_focused_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_check_off_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_radio_off_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_small_on_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_rate_star_small_on_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_off_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_toggle_off_disabled_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_textfield_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_textfield_disabled_focused_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_spinner_focused_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_check_on_pressed_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_spinner_default_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_spinner_default_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_check_on_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_on_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_check_on_disabled_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progress_primary_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_progress_primary_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_off_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_rating_star_off_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="tab_selected_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/tab_selected_focused_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_selected_pressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_tab_selected_pressed_holo.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo7"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_progressbar_indeterminate_holo7.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_on_disabled_focused_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_radio_on_disabled_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo5"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_progressbar_indeterminate_holo5.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_switch_thumb_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_switch_thumb_pressed_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_control_disabled_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_scrubber_control_disabled_holo.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_radio_off_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_radio_off_disabled_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_toggle_on_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_toggle_on_disabled_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="spinner_ab_focused_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/spinner_ab_focused_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_fastscroll_thumb_pressed_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_fastscroll_thumb_pressed_holo.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="tab_unselected_foodieactionbar"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/tab_unselected_foodieactionbar.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_selected_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_tab_selected_holo.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_progressbar_indeterminate_holo2"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_progressbar_indeterminate_holo2.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_check_off_disabled_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_check_off_disabled_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_scrubber_track_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_scrubber_track_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_rate_star_big_half_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_rate_star_big_half_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_list_focused_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_list_focused_holo.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_tab_unselected_holo"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_tab_unselected_holo.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foodietheme_btn_rating_star_on_pressed_holo_light"
+                path="/home/radzell/Gigs/app/src/main/res/drawable-hdpi/foodietheme_btn_rating_star_on_pressed_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="sign_in"
+                path="/home/radzell/Gigs/app/src/main/res/menu/sign_in.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="filter_grid_menu"
+                path="/home/radzell/Gigs/app/src/main/res/menu/filter_grid_menu.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="login"
+                path="/home/radzell/Gigs/app/src/main/res/menu/login.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="create_review_menu"
+                path="/home/radzell/Gigs/app/src/main/res/menu/create_review_menu.xml"
+                qualifiers=""
+                type="menu" />
+        </source>
+        <source path="/home/radzell/Gigs/app/build/res/rs/debug" />
+        <source path="/home/radzell/Gigs/app/build/res/generated/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/radzell/Gigs/app/src/debug/res" />
+    </dataSet>
+
+</merger>

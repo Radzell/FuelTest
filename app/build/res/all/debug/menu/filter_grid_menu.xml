@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="$com.appmunki.gigs.RestaurantGrid" >
+    <!-- Search, should appear as action button -->
+    <item android:id="@+id/action_add_resturant"
+        android:title="@string/add_restaurant"
+        android:showAsAction="always" />
+    <item android:id="@+id/action_all"
+        android:title="@string/action_all"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_most_visited"
+        android:title="@string/action_most_visited"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_highly_Rated"
+        android:title="@string/action_highly_rated"
+        android:showAsAction="never" />
+
+
+
+</menu>
+<!-- From: file:/home/radzell/Gigs/app/src/main/res/menu/filter_grid_menu.xml -->

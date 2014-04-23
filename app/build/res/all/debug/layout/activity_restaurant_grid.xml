@@ -1,0 +1,9 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/resturant_grid"
+    android:name="com.appmunki.gigs.restaurant.RestaurantGridFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appmunki.gigs.RestaurantGridActivity"
+    tools:layout="@android:layout/list_content" />
+<!-- From: file:/home/radzell/Gigs/app/src/main/res/layout/activity_restaurant_grid.xml -->

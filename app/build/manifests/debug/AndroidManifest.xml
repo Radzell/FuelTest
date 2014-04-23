@@ -1,0 +1,26 @@
+<!-- From: file:/home/radzell/Gigs/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.appmunki.gigs">
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="18"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application android:allowBackup="true" android:label="@string/app_name" android:theme="@style/FoodieTheme">
+        <activity android:label="@string/title_resturant_list" android:name="com.appmunki.gigs.restaurant.RestaurantGridActivity">
+        </activity>
+        <activity android:label="@string/title_resturant_detail" android:name="com.appmunki.gigs.restaurant.RestaurantDetailActivity" android:parentActivityName="com.appmunki.gigs.restaurant.RestaurantGridActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appmunki.gigs.ResturantGridActivity"/>
+        </activity>
+        <activity android:label="@string/title_activity_login" android:name="com.appmunki.gigs.login.LoginActivity" android:windowSoftInputMode="adjustResize|stateVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_create_review" android:name="com.appmunki.gigs.review.ReviewCreateActivity">
+        </activity>
+        <activity android:name="com.appmunki.gigs.restaurant.RestaurantCreateActivity">
+        </activity>
+    </application>
+
+</manifest>

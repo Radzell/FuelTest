@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="androrm">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/androrm.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

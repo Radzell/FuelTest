@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:measureWithLargestChild="false"
+            android:orientation="vertical"
+            android:shrinkColumns="0"
+            android:baselineAligned="false"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:showDividers="beginning|end">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:layout_span="2">
+                    <com.appmunki.gigs.restaurant.SquareImageView
+                        android:id="@+id/detailImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/imgd"
+                        android:scaleType="fitXY"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true" />
+                    <TextView
+                        android:id="@+id/detailTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="This is a very long piece of test to show that this imageview is working"
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignBottom="@+id/detailImageView"
+                        android:layout_marginBottom="10dp"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium.Inverse"
+                        android:textStyle="bold" />
+
+
+
+                </RelativeLayout>
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:divider="@android:drawable/divider_horizontal_dark"
+                android:paddingLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/visits"
+                    android:id="@+id/textView"
+                    android:textStyle="bold"
+                    android:textColor="@color/foodietheme_color"
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/visitstextView"
+                    android:layout_span="0" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:showDividers="beginning|middle|end"
+                android:divider="@android:drawable/divider_horizontal_dim_dark">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/rating"
+                    android:id="@+id/textView3"
+                    android:textStyle="bold"
+                    android:textColor="@color/foodietheme_color"
+                    android:layout_marginRight="8dp" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detailsratingBar"
+                    style="@style/RatingBarSmallFoodieTheme"
+                    android:numStars="5"
+                    android:rating="2" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:divider="@android:drawable/divider_horizontal_dim_dark"
+                android:showDividers="beginning|middle|end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/latestreview"
+                    android:id="@+id/textView4"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/foodietheme_color"
+                    android:textStyle="bold"
+                    android:layout_marginRight="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Small Text"
+                    android:id="@+id/lastreviewtextView"
+                    android:layout_gravity="center_vertical" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/newreview"
+                    android:id="@+id/detailsbutton"
+                    android:layout_span="2"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>
+<!-- From: file:/home/radzell/Gigs/app/src/main/res/layout/fragment_restaurant_detail.xml -->
