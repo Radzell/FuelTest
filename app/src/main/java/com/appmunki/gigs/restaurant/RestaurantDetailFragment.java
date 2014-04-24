@@ -4,11 +4,9 @@ import android.app.Fragment;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -80,14 +78,7 @@ public class RestaurantDetailFragment extends Fragment {
                     .into(((ImageView) getView().findViewById(R.id.detailImageView)));
             ((EditText) getView().findViewById(R.id.visitstextView))
                     .setText("" + mItem.getVisits());
-            ((EditText) getView().findViewById(R.id.visitstextView)).setOnEditorActionListener(new TextView.OnEditorActionListener() {
-                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                    if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_DONE)) {
-                        updateVisits();
-                    }
-                    return false;
-                }
-            });
+
             ((TextView) getView().findViewById(R.id.detailTextView))
                     .setText("" + mItem.getTitle());
             ((RatingBar) getView().findViewById(R.id.detailsratingBar)).setRating((float) mItem.getRating());

@@ -83,6 +83,7 @@ public class RestaurantListFragment extends Fragment implements AdapterView.OnIt
     @Override
     public void onResume() {
         Log.i("TAG", "OnResume: " + this.getClass().getSimpleName());
+        filterRestaurants(0);
         super.onResume();
     }
 
