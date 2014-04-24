@@ -11,7 +11,6 @@ import android.os.ParcelFileDescriptor;
 import android.provider.MediaStore;
 import android.support.v4.app.NavUtils;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -21,23 +20,22 @@ import android.widget.EditText;
 import android.widget.RatingBar;
 
 import com.appmunki.gigs.R;
-import com.appmunki.gigs.utils.MySQLiteHelper;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
-public class RestaurantCreateActivity extends Activity {
+public class RestaurantCreateActivity extends Activity implements View.OnClickListener {
 
 
     private static final int SELECT_PICTURE = 1;
-    RestaurantModel mRestaurant;
-    private String selectedImagePath;
     private EditText mTitleView;
     private EditText mDescriptionView;
     private RatingBar mRatingView;
     private Button mButtonView;
     private Bitmap mBitmap;
 
+    /**
+     * Initialize the views and the event drivers
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,16 +48,7 @@ public class RestaurantCreateActivity extends Activity {
         mDescriptionView = (EditText) findViewById(R.id.descriptioneditText);
         mRatingView = (RatingBar) findViewById(R.id.ratingBar);
         mButtonView = (Button) findViewById(R.id.imageButton);
-        mButtonView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent();
-                intent.setType("image/*");
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(intent,
-                        "Select Picture"), SELECT_PICTURE);
-            }
-        });
+        mButtonView.setOnClickListener(this);
 
     }
 
@@ -79,49 +68,43 @@ public class RestaurantCreateActivity extends Activity {
                 saveRestaurant();
                 return true;
             case android.R.id.home:
-                // This ID represents the Home or Up button. In the case of this
-                // activity, the Up button is shown. Use NavUtils to allow users
-                // to navigate up one level in the application structure. For
-                // more details, see the Navigation pattern on Android Design:
-                //
-                // http://developer.android.com/design/patterns/navigation.html#up-vs-back
-                //
                 NavUtils.navigateUpFromSameTask(this);
-
                 return true;
-
             default:
                 return super.onOptionsItemSelected(item);
         }
 
     }
 
+    /**
+     * Saves the restaurant data
+     * TODO: implement a asynchronous version
+     */
     private void saveRestaurant() {
         // Reset errors.
         mTitleView.setError(null);
         mDescriptionView.setError(null);
 
-        // Store values at the time of the login aString ttempt.
+        // Store values at the time of the attempt
         String mTitle = mTitleView.getText().toString();
         String mDescription = mDescriptionView.getText().toString();
         double mRating = mRatingView.getRating();
         boolean cancel = false;
         View focusView = null;
 
-        // Check for a valid password.
+        // Check for a valid title.
         if (TextUtils.isEmpty(mTitle)) {
             mTitleView.setError(getString(R.string.error_field_required));
             focusView = mTitleView;
             cancel = true;
         }
 
-        // Check for a valid email address.
+        // Check for a valid description.
         if (TextUtils.isEmpty(mDescription)) {
             mDescriptionView.setError(getString(R.string.error_field_required));
             focusView = mDescriptionView;
             cancel = true;
         }
-
 
 
         if (cancel) {
@@ -130,9 +113,7 @@ public class RestaurantCreateActivity extends Activity {
             focusView.requestFocus();
         } else {
 
-
-            MySQLiteHelper.checkDB(this);
-            Log.i("TAG", "restaurant count:" + RestaurantModel.readRestaurants(this).all().count());
+            //finish and save restaurant in database
             RestaurantModel restaurantModel = new RestaurantModel(mTitle, mDescription, mRating, 0);
             restaurantModel.setPicture(mBitmap);
             restaurantModel.save(this);
@@ -141,6 +122,13 @@ public class RestaurantCreateActivity extends Activity {
         }
     }
 
+    /**
+     * Retrieve the image and camera the save the bitmap and set the imageview.
+     *
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
 
         if (resultCode == RESULT_OK) {
@@ -151,8 +139,7 @@ public class RestaurantCreateActivity extends Activity {
                         mBitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedImageUri);
                         mButtonView.setBackgroundDrawable(new BitmapDrawable(getResources(), mBitmap));
 
-                    } catch (IOException e) {
-                        e.printStackTrace();
+                    } catch (Exception e) {
                     }
 
 
@@ -165,15 +152,20 @@ public class RestaurantCreateActivity extends Activity {
                         mBitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedImageUri);
                         mButtonView.setBackgroundDrawable(new BitmapDrawable(getResources(), mBitmap));
 
-                    } catch (FileNotFoundException e) {
-                        e.printStackTrace();
-                    } catch (IOException e) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace();
+                    } catch (Exception e) {
+
                     }
                 }
             }
         }
     }
 
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(Intent.createChooser(intent,
+                "Select Picture"), SELECT_PICTURE);
+    }
 }

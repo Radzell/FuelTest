@@ -49,14 +49,14 @@ public class RestaurantModelAdapter extends ArrayAdapter<RestaurantModel> {
             vh = (ViewHolder) convertView.getTag();
         }
 
-        File file =getItem(position).getPictureFile();
-        if(file!=null) {
+        File file = getItem(position).getPictureFile();
+        if (file != null) {
             Picasso.with(getContext()).load(getItem(position).getPictureFile()).
                     placeholder(R.drawable.loading)
                     .error(R.drawable.error)
                     .fit() //
                     .into(vh.mImageView);
-        }else{
+        } else {
             Picasso.with(getContext()).load(R.drawable.loading).
                     placeholder(R.drawable.loading)
                     .error(R.drawable.error)
@@ -72,7 +72,6 @@ public class RestaurantModelAdapter extends ArrayAdapter<RestaurantModel> {
 
         return convertView;
     }
-
 
 
     static class ViewHolder {

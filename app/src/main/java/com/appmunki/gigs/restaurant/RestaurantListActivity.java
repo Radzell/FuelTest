@@ -3,6 +3,7 @@ package com.appmunki.gigs.restaurant;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -43,9 +44,8 @@ public class RestaurantListActivity extends Activity implements
 
 
         // Standard tabbed navigation setup.
-        final ActionBar actionBar = getActionBar();
-        actionBar.setDisplayShowTitleEnabled(true);
-        actionBar.setDisplayShowCustomEnabled(false);
+        getActionBar().setIcon(
+                new ColorDrawable(getResources().getColor(android.R.color.transparent)));
         //actionBar.setDisplayOptions(actionBar.DISPLAY_SHOW_CUSTOM);
 
     }

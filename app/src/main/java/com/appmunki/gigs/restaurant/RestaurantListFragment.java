@@ -94,7 +94,7 @@ public class RestaurantListFragment extends Fragment implements AdapterView.OnIt
 
         //Retrieves the data for the grid
         List<RestaurantModel> data = RestaurantModel.readRestaurants(getActivity()).all().toList();
-        Log.i("TAG","count: "+data.size());
+        Log.i("TAG", "count: " + data.size());
         //Initialization of the restaurant adapter
         mAdapter = new RestaurantModelAdapter(getActivity(), R.id.txt_line1);
         mAdapter.addAll(data);

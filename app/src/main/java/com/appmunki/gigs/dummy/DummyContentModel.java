@@ -14,16 +14,21 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Helper class for providing sample content for user interfaces created by
- * Android template wizards.
+ * Helper class for providing sample content for
  * <p>
- * TODO: Replace all uses of this class before publishing your app.
  */
 public class DummyContentModel {
+    /**
+     * Flag for testing the application with dummy conext
+     */
     private static boolean debugging=false;
 
+    /**
+     * Adds dummy content for the application
+     * @param context
+     */
 	public static void createDummyContent(Context context) {
-		// Add 3 sample items.
+
 		if (RestaurantModel.readRestaurants(context).isEmpty()&&debugging) {
             DatabaseAdapter adapter = DatabaseAdapter.getInstance(context);
             adapter.beginTransaction();

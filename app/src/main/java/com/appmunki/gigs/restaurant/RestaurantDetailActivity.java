@@ -1,6 +1,7 @@
 package com.appmunki.gigs.restaurant;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
@@ -28,7 +29,8 @@ public class RestaurantDetailActivity extends FragmentActivity {
 
         // Show the Up button in the action bar.
         getActionBar().setDisplayHomeAsUpEnabled(true);
-
+        getActionBar().setIcon(
+                new ColorDrawable(getResources().getColor(android.R.color.transparent)));
 
         if (savedInstanceState == null) {
             // Create the detail fragment and add it to the activity

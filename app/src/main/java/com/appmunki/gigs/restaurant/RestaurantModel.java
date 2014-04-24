@@ -50,7 +50,7 @@ public class RestaurantModel extends Model {
         mVisits.set(0);
     }
 
-    public static  QuerySet<RestaurantModel> readRestaurants(Context context) {
+    public static QuerySet<RestaurantModel> readRestaurants(Context context) {
         return objects(context, RestaurantModel.class);
     }
 
@@ -102,7 +102,6 @@ public class RestaurantModel extends Model {
     }
 
 
-
     public QuerySet<ReviewModel> getReviews(Context context) {
         return mReviewModel.get(context, this);
     }
@@ -114,7 +113,7 @@ public class RestaurantModel extends Model {
      */
     public File getPictureFile() {
         String _path = mPicture.get();
-        if(_path==null) return null;
+        if (_path == null) return null;
         return new File(_path);
     }
 

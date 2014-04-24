@@ -368,20 +368,21 @@ containing a value of this type.
         public static final int latestreview=0x7f07001c;
         public static final int login_progress_registering=0x7f07001d;
         public static final int login_progress_signing_in=0x7f07001e;
-        public static final int newreview=0x7f07001f;
-        public static final int prompt_email=0x7f070020;
-        public static final int prompt_name=0x7f070021;
-        public static final int prompt_password=0x7f070022;
-        public static final int rating=0x7f070023;
-        public static final int reviews=0x7f070024;
-        public static final int title=0x7f070025;
-        public static final int title_activity_create_review=0x7f070026;
-        public static final int title_activity_login=0x7f070027;
-        public static final int title_activity_restaurant_category_grid=0x7f070028;
-        public static final int title_restaurant_detail=0x7f070029;
-        public static final int title_restaurant_list=0x7f07002a;
-        public static final int visits=0x7f07002b;
-        public static final int write_review=0x7f07002c;
+        public static final int login_title=0x7f07001f;
+        public static final int newreview=0x7f070020;
+        public static final int prompt_email=0x7f070021;
+        public static final int prompt_name=0x7f070022;
+        public static final int prompt_password=0x7f070023;
+        public static final int rating=0x7f070024;
+        public static final int reviews=0x7f070025;
+        public static final int title=0x7f070026;
+        public static final int title_activity_create_review=0x7f070027;
+        public static final int title_activity_login=0x7f070028;
+        public static final int title_activity_restaurant_category_grid=0x7f070029;
+        public static final int title_restaurant_detail=0x7f07002a;
+        public static final int title_restaurant_list=0x7f07002b;
+        public static final int visits=0x7f07002c;
+        public static final int write_review=0x7f07002d;
     }
     public static final class style {
         public static final int ActionBar_Solid_Foodieactionbar=0x7f080000;
@@ -391,29 +392,30 @@ containing a value of this type.
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f08001a;
+        public static final int AppBaseTheme=0x7f08001b;
         public static final int AutoCompleteTextViewFoodieTheme=0x7f080004;
         public static final int ButtonFoodieTheme=0x7f080005;
         public static final int DropDownListView_Foodieactionbar=0x7f080006;
         public static final int DropDownNav_Foodieactionbar=0x7f080007;
         public static final int FoodieTheme=0x7f080008;
-        public static final int ImageButtonFoodieTheme=0x7f080009;
-        public static final int LoginFormContainer=0x7f08000a;
-        public static final int PopupMenu_Foodieactionbar=0x7f08000b;
-        public static final int ProgressBar_Foodieactionbar=0x7f08000c;
-        public static final int ProgressBarFoodieTheme=0x7f08000d;
-        public static final int RatingBarBigFoodieTheme=0x7f08000e;
-        public static final int RatingBarFoodieTheme=0x7f08000f;
-        public static final int RatingBarSmallFoodieTheme=0x7f080010;
-        public static final int SeekBarFoodieTheme=0x7f080011;
-        public static final int SpinnerFoodieTheme=0x7f080012;
-        public static final int TabFoodieTheme=0x7f080013;
-        public static final int TabTextFoodieTheme=0x7f080014;
-        public static final int TextButtonFoodieTheme=0x7f080015;
-        public static final int Theme_Foodieactionbar=0x7f080016;
-        public static final int Theme_Foodieactionbar_Widget=0x7f080017;
-        public static final int ToggleFoodieTheme=0x7f080018;
-        public static final int _FoodieTheme=0x7f080019;
+        public static final int Foodieactionbar_ActionBar_TitleTextStyle=0x7f080009;
+        public static final int ImageButtonFoodieTheme=0x7f08000a;
+        public static final int LoginFormContainer=0x7f08000b;
+        public static final int PopupMenu_Foodieactionbar=0x7f08000c;
+        public static final int ProgressBar_Foodieactionbar=0x7f08000d;
+        public static final int ProgressBarFoodieTheme=0x7f08000e;
+        public static final int RatingBarBigFoodieTheme=0x7f08000f;
+        public static final int RatingBarFoodieTheme=0x7f080010;
+        public static final int RatingBarSmallFoodieTheme=0x7f080011;
+        public static final int SeekBarFoodieTheme=0x7f080012;
+        public static final int SpinnerFoodieTheme=0x7f080013;
+        public static final int TabFoodieTheme=0x7f080014;
+        public static final int TabTextFoodieTheme=0x7f080015;
+        public static final int TextButtonFoodieTheme=0x7f080016;
+        public static final int Theme_Foodieactionbar=0x7f080017;
+        public static final int Theme_Foodieactionbar_Widget=0x7f080018;
+        public static final int ToggleFoodieTheme=0x7f080019;
+        public static final int _FoodieTheme=0x7f08001a;
     }
     public static final class styleable {
         /** Attributes that can be used with a StaggeredGridView.

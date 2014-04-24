@@ -49,7 +49,7 @@
             <file
                 path="/home/radzell/Gigs/app/src/main/res/values/strings.xml"
                 qualifiers="" >
-                <string name="createrestaurant" >Create Restaurant
+                <string name="createrestaurant" >Create A Restaurant
                 </string>
                 <string name="reviews" >Reviews
                 </string>
@@ -69,7 +69,7 @@
                 </string>
                 <string name="description" >Description
                 </string>
-                <string name="add_restaurant" >Add Restaurant
+                <string name="add_restaurant" >Add  A Restaurant
                 </string>
                 <string name="action_highly_rated" >Highly Rated
                 </string>
@@ -77,7 +77,7 @@
                 </string>
                 <string name="rating" >Rating
                 </string>
-                <string name="createreview" >Create Review
+                <string name="createreview" >Create A Review
                 </string>
                 <string name="chooseanimage" >Choose An Image
                 </string>
@@ -87,17 +87,19 @@
                 </string>
                 <string name="hello_world" >Hello world!
                 </string>
-                <string name="title_activity_create_review" >CreateReviewActivity
+                <string name="title_activity_create_review" >Writee A Review
                 </string>
                 <string name="error_invalid_real_number" >This number should be positive
                 </string>
                 <string name="action_submit" >Submit
                 </string>
+                <string name="login_title" >Login
+                </string>
                 <string name="comment" >Comment
                 </string>
                 <string name="visits" >Visits
                 </string>
-                <string name="title_restaurant_detail" >Restaurant Detail
+                <string name="title_restaurant_detail" >Restaurant Details
                 </string>
                 <string name="action_most_visited" >Most Visited
                 </string>
@@ -190,6 +192,9 @@ Highly Rated
                     <item name="android:progressBarStyle">
 @style/ProgressBar.Foodieactionbar
                     </item>
+                    <item name="android:titleTextStyle">
+@style/Foodieactionbar.ActionBar.TitleTextStyle
+                    </item>
                 </style>
 
                 <style
@@ -205,6 +210,17 @@ Highly Rated
                     parent="@android:style/Widget.Holo.Light.ListView.DropDown" >
                     <item name="android:listSelector">
 @drawable/selectable_background_foodieactionbar
+                    </item>
+                </style>
+
+                <style
+                    name="Foodieactionbar.ActionBar.TitleTextStyle"
+                    parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title" >
+                    <item name="android:textColor">
+@color/foodietheme_color
+                    </item>
+                    <item name="android:textStyle">
+bold
                     </item>
                 </style>
 
@@ -393,45 +409,6 @@ marquee
                 </style>
 
                 <style
-                    name="RatingBarBigFoodieTheme"
-                    parent="android:Widget.Holo.Light.RatingBar.Indicator" >
-                    <item name="android:progressDrawable">
-@drawable/foodietheme_ratingbar_holo_light
-                    </item>
-                    <item name="android:indeterminateDrawable">
-@drawable/foodietheme_ratingbar_holo_light
-                    </item>
-                </style>
-
-                <style
-                    name="TextButtonFoodieTheme"
-                    parent="android:Widget.Holo.Light.ImageButton" >
-                    <item name="android:textStyle">
-bold
-                    </item>
-                    <item name="android:textColor">
-@drawable/foodie_btn_text
-                    </item>
-                    <item name="android:background">
-@android:color/transparent
-                    </item>
-                </style>
-
-                <style
-                    name="SeekBarFoodieTheme"
-                    parent="android:Widget.Holo.Light.SeekBar" >
-                    <item name="android:progressDrawable">
-            @drawable/foodietheme_scrubber_progress_horizontal_holo_light
-                    </item>
-                    <item name="android:indeterminateDrawable">
-            @drawable/foodietheme_scrubber_progress_horizontal_holo_light
-                    </item>
-                    <item name="android:thumb">
-@drawable/foodietheme_scrubber_control_selector_holo_light
-                    </item>
-                </style>
-
-                <style
                     name="ImageButtonFoodieTheme"
                     parent="android:Widget.Holo.Light.ImageButton" >
                     <item name="android:background">
@@ -451,6 +428,17 @@ bold
                 </style>
 
                 <style
+                    name="RatingBarBigFoodieTheme"
+                    parent="android:Widget.Holo.Light.RatingBar.Indicator" >
+                    <item name="android:progressDrawable">
+@drawable/foodietheme_ratingbar_holo_light
+                    </item>
+                    <item name="android:indeterminateDrawable">
+@drawable/foodietheme_ratingbar_holo_light
+                    </item>
+                </style>
+
+                <style
                     name="ToggleFoodieTheme"
                     parent="android:Widget.Holo.Light.Button.Toggle" >
                     <item name="android:background">
@@ -466,6 +454,20 @@ bold
                     </item>
                     <item name="android:indeterminateDrawable">
             @drawable/foodietheme_progress_indeterminate_horizontal_holo_light
+                    </item>
+                </style>
+
+                <style
+                    name="TextButtonFoodieTheme"
+                    parent="android:Widget.Holo.Light.ImageButton" >
+                    <item name="android:textStyle">
+bold
+                    </item>
+                    <item name="android:textColor">
+@drawable/foodie_btn_text
+                    </item>
+                    <item name="android:background">
+@android:color/transparent
                     </item>
                 </style>
 
@@ -531,6 +533,20 @@ center_horizontal
                     </item>
                     <item name="android:minWidth">
 80dip
+                    </item>
+                </style>
+
+                <style
+                    name="SeekBarFoodieTheme"
+                    parent="android:Widget.Holo.Light.SeekBar" >
+                    <item name="android:progressDrawable">
+            @drawable/foodietheme_scrubber_progress_horizontal_holo_light
+                    </item>
+                    <item name="android:indeterminateDrawable">
+            @drawable/foodietheme_scrubber_progress_horizontal_holo_light
+                    </item>
+                    <item name="android:thumb">
+@drawable/foodietheme_scrubber_control_selector_holo_light
                     </item>
                 </style>
 

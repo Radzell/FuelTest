@@ -38,6 +38,11 @@
         <item name="android:backgroundStacked">@drawable/ab_stacked_solid_foodieactionbar</item>
         <item name="android:backgroundSplit">@drawable/ab_bottom_solid_foodieactionbar</item>
         <item name="android:progressBarStyle">@style/ProgressBar.Foodieactionbar</item>
+        <item name="android:titleTextStyle">@style/Foodieactionbar.ActionBar.TitleTextStyle</item>
+    </style>
+    <style name="Foodieactionbar.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/foodietheme_color</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="ActionBar.Transparent.Foodieactionbar" parent="@android:style/Widget.Holo.Light.ActionBar">

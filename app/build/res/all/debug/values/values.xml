@@ -71,14 +71,14 @@
     <eat-comment />
 
     <string name="action_submit">Submit</string>
-    <string name="add_restaurant">Add Restaurant</string>
+    <string name="add_restaurant">Add  A Restaurant</string>
     <string name="app_name">Foodie</string>
     <string name="appname">Foodie</string>
     <string name="chooseanimage">Choose An Image</string>
     <string name="chooseimage">Choose A Image</string>
     <string name="comment">Comment</string>
-    <string name="createrestaurant">Create Restaurant</string>
-    <string name="createreview">Create Review</string>
+    <string name="createrestaurant">Create A Restaurant</string>
+    <string name="createreview">Create A Review</string>
     <string name="description">Description</string>
     <string name="done">Done</string>
     <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings_activity_login.xml -->
@@ -104,6 +104,7 @@
     <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
+    <string name="login_title">Login</string>
     <string name="newreview">Write A New Review</string>
     <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
@@ -117,7 +118,7 @@
     <string name="rating">Rating</string>
     <string name="reviews">Reviews</string>
     <string name="title">Title</string>
-    <string name="title_activity_create_review">CreateReviewActivity</string>
+    <string name="title_activity_create_review">Writee A Review</string>
     <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
@@ -126,7 +127,7 @@
     <eat-comment />
 
     <string name="title_activity_restaurant_category_grid">RestaurantCategoryGrid</string>
-    <string name="title_restaurant_detail">Restaurant Detail</string>
+    <string name="title_restaurant_detail">Restaurant Details</string>
     <string name="title_restaurant_list">Restaurants</string>
     <string name="visits">Visits</string>
     <string name="write_review">Write Review</string>
@@ -138,6 +139,7 @@
         <item name="android:backgroundStacked">@drawable/ab_stacked_solid_foodieactionbar</item>
         <item name="android:backgroundSplit">@drawable/ab_bottom_solid_foodieactionbar</item>
         <item name="android:progressBarStyle">@style/ProgressBar.Foodieactionbar</item>
+        <item name="android:titleTextStyle">@style/Foodieactionbar.ActionBar.TitleTextStyle</item>
     </style>
 
     <style name="ActionBar.Transparent.Foodieactionbar" parent="@android:style/Widget.Holo.Light.ActionBar">
@@ -179,6 +181,13 @@
     <eat-comment />
 
     <style name="FoodieTheme" parent="@style/_FoodieTheme" />
+    <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/styles_foodieactionbar.xml -->
+    <eat-comment />
+
+    <style name="Foodieactionbar.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/foodietheme_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
     <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/styles_foodietheme.xml -->
     <eat-comment />
 

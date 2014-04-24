@@ -86,11 +86,10 @@ public class RestaurantDetailFragment extends Fragment {
             ReviewModelAdapter mReviewAdapter = new ReviewModelAdapter(getActivity(), R.id.txt_line1);
             try {
                 mReviewAdapter.addAll(mItem.getReviews(getActivity()).all().toList());
-            }catch(Exception e){
+            } catch (Exception e) {
 
             }
             ((ListView) getView().findViewById(R.id.detailsreviewlistview)).setAdapter(mReviewAdapter);
-
 
 
         }

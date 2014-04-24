@@ -6,13 +6,13 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
-    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/FoodieTheme">
+    <application android:allowBackup="true" android:label="@string/app_name" android:theme="@style/FoodieTheme">
         <activity android:label="@string/title_restaurant_list" android:name="com.appmunki.gigs.restaurant.RestaurantListActivity">
         </activity>
         <activity android:label="@string/title_restaurant_detail" android:name="com.appmunki.gigs.restaurant.RestaurantDetailActivity" android:parentActivityName="com.appmunki.gigs.restaurant.RestaurantListActivity">
             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appmunki.gigs.RestaurantListActivity"/>
         </activity>
-        <activity android:label="@string/title_activity_login" android:name="com.appmunki.gigs.user.LoginActivity" android:windowSoftInputMode="adjustResize|stateVisible">
+        <activity android:label="@string/login_title" android:name="com.appmunki.gigs.user.LoginActivity" android:windowSoftInputMode="adjustResize|stateVisible">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -22,7 +22,7 @@
         <activity android:label="@string/title_activity_create_review" android:name="com.appmunki.gigs.review.ReviewCreateActivity" android:parentActivityName="com.appmunki.gigs.restaurant.RestaurantDetailActivity">
             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appmunki.gigs.RestaurantDetailActivity"/>
         </activity>
-        <activity android:name="com.appmunki.gigs.restaurant.RestaurantCreateActivity" android:parentActivityName="com.appmunki.gigs.restaurant.RestaurantListActivity">
+        <activity android:label="@string/add_restaurant" android:name="com.appmunki.gigs.restaurant.RestaurantCreateActivity" android:parentActivityName="com.appmunki.gigs.restaurant.RestaurantListActivity">
             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appmunki.gigs.RestaurantListActivity"/>
         </activity>
     </application>

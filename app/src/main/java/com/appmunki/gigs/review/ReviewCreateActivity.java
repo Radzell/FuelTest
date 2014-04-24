@@ -1,6 +1,7 @@
 package com.appmunki.gigs.review;
 
 import android.app.Activity;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.Menu;
@@ -28,7 +29,8 @@ public class ReviewCreateActivity extends Activity implements View.OnClickListen
         setContentView(R.layout.activity_create_review_view);
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
-
+        getActionBar().setIcon(
+                new ColorDrawable(getResources().getColor(android.R.color.transparent)));
         if (!getIntent().hasExtra(RestaurantDetailFragment.ARG_RESTAURANT_ID))
             finish();
 
