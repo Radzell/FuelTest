@@ -20,7 +20,7 @@
         <item>Highly Rated</item>
     </string-array>
 
-    <string name="title_activity_create_review">Writee A Review</string>
+    <string name="title_activity_create_review">Write A Review</string>
     <string name="hello_world">Hello world!</string>
     <string name="title">Title</string>
     <string name="createreview">Create A Review</string>
@@ -32,7 +32,7 @@
     <string name="createrestaurant">Create A Restaurant</string>
     <string name="add_restaurant">Add  A Restaurant</string>
     <string name="description">Description</string>
-    <string name="write_review">Write Review</string>
+    <string name="write_review">Write A Review</string>
     <string name="error_invalid_real_number">This number should be positive</string>
     <string name="reviews">Reviews</string>
     <string name="appname">Foodie</string>
