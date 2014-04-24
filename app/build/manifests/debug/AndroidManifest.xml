@@ -3,23 +3,27 @@
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="18"/>
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
-    <application android:allowBackup="true" android:label="@string/app_name" android:theme="@style/FoodieTheme">
-        <activity android:label="@string/title_resturant_list" android:name="com.appmunki.gigs.restaurant.RestaurantGridActivity">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/FoodieTheme">
+        <activity android:label="@string/title_restaurant_list" android:name="com.appmunki.gigs.restaurant.RestaurantListActivity">
         </activity>
-        <activity android:label="@string/title_resturant_detail" android:name="com.appmunki.gigs.restaurant.RestaurantDetailActivity" android:parentActivityName="com.appmunki.gigs.restaurant.RestaurantGridActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appmunki.gigs.ResturantGridActivity"/>
+        <activity android:label="@string/title_restaurant_detail" android:name="com.appmunki.gigs.restaurant.RestaurantDetailActivity" android:parentActivityName="com.appmunki.gigs.restaurant.RestaurantListActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appmunki.gigs.RestaurantListActivity"/>
         </activity>
-        <activity android:label="@string/title_activity_login" android:name="com.appmunki.gigs.login.LoginActivity" android:windowSoftInputMode="adjustResize|stateVisible">
+        <activity android:label="@string/title_activity_login" android:name="com.appmunki.gigs.user.LoginActivity" android:windowSoftInputMode="adjustResize|stateVisible">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:label="@string/title_activity_create_review" android:name="com.appmunki.gigs.review.ReviewCreateActivity">
+        <activity android:label="@string/title_activity_create_review" android:name="com.appmunki.gigs.review.ReviewCreateActivity" android:parentActivityName="com.appmunki.gigs.restaurant.RestaurantDetailActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appmunki.gigs.RestaurantDetailActivity"/>
         </activity>
-        <activity android:name="com.appmunki.gigs.restaurant.RestaurantCreateActivity">
+        <activity android:name="com.appmunki.gigs.restaurant.RestaurantCreateActivity" android:parentActivityName="com.appmunki.gigs.restaurant.RestaurantListActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appmunki.gigs.RestaurantListActivity"/>
         </activity>
     </application>
 

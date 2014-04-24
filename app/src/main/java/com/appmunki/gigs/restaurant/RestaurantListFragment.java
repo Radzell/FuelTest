@@ -1,8 +1,8 @@
 package com.appmunki.gigs.restaurant;
 
 import android.app.Activity;
-import android.os.Bundle;
 import android.app.Fragment;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,7 +18,7 @@ import com.orm.androrm.QuerySet;
 import java.util.List;
 
 /**
- * A list fragment representing a list of Resturants. This fragment also
+ * A list fragment representing a list of Restaurants. This fragment also
  * supports tablet devices by allowing list items to be given an 'activated'
  * state upon selection. This helps indicate which item is currently being
  * viewed in a {@link RestaurantDetailFragment}.
@@ -30,24 +30,13 @@ public class RestaurantListFragment extends Fragment implements AdapterView.OnIt
     /**
      * A set of filters fo the grid
      */
-    Filter[] mFilters = {new Filter().is("mId",""),new Filter().is("mVisits",">",5),new Filter().is("mRating",">",3)};
+    Filter[] mFilters = {new Filter().is("mId", ""), new Filter().is("mVisits", ">", 5), new Filter().is("mRating", ">", 3)};
 
 
     /**
      * The tag of all the logging for this fragment. Uses the based name of the class.
      */
     String TAG = this.getClass().getSimpleName();
-
-
-     /** The fragment's current callback object, which is notified of list item
-     * clicks.
-     */
-    private Callbacks mCallbacks = null;
-    /**
-     * The current activated item position. Only used on tablets.
-     */
-    private int mActivatedPosition = ListView.INVALID_POSITION;
-
     /**
      * Etsy implementation of a staggeredgrid
      */
@@ -56,6 +45,15 @@ public class RestaurantListFragment extends Fragment implements AdapterView.OnIt
      * Adapter for manipulation of the staggered grid
      */
     RestaurantModelAdapter mAdapter;
+    /**
+     * The fragment's current callback object, which is notified of list item
+     * clicks.
+     */
+    private Callbacks mCallbacks = null;
+    /**
+     * The current activated item position. Only used on tablets.
+     */
+    private int mActivatedPosition = ListView.INVALID_POSITION;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -68,6 +66,7 @@ public class RestaurantListFragment extends Fragment implements AdapterView.OnIt
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
+        Log.i("TAG", "OnCreate: " + this.getClass().getSimpleName());
 
 
     }
@@ -76,7 +75,15 @@ public class RestaurantListFragment extends Fragment implements AdapterView.OnIt
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_restaurant_grid,
                 container, false);
+        Log.i("TAG", "OnCreateView: " + this.getClass().getSimpleName());
+
         return rootView;
+    }
+
+    @Override
+    public void onResume() {
+        Log.i("TAG", "OnResume: " + this.getClass().getSimpleName());
+        super.onResume();
     }
 
     @Override
@@ -85,8 +92,8 @@ public class RestaurantListFragment extends Fragment implements AdapterView.OnIt
         mGridView = (GridView) getView().findViewById(R.id.grid_view);
 
         //Retrieves the data for the grid
-        List<RestaurantModel> data = RestaurantModel.readResturants(getActivity()).all().toList();
-
+        List<RestaurantModel> data = RestaurantModel.readRestaurants(getActivity()).all().toList();
+        Log.i("TAG","count: "+data.size());
         //Initialization of the restaurant adapter
         mAdapter = new RestaurantModelAdapter(getActivity(), R.id.txt_line1);
         mAdapter.addAll(data);
@@ -122,7 +129,6 @@ public class RestaurantListFragment extends Fragment implements AdapterView.OnIt
     }
 
 
-
     /**
      * Turns on activate-on-click mode. When this mode is on, list items will be
      * given the 'activated' state when touched.
@@ -131,15 +137,16 @@ public class RestaurantListFragment extends Fragment implements AdapterView.OnIt
 
     }
 
-    public void filterRestaurants(int position){
+    public void filterRestaurants(int position) {
 
         Filter filter = mFilters[position];
-        Log.i(TAG,"filter: "+filter.toString());
+        Log.i(TAG, "filter: " + filter.toString());
 
-        QuerySet<RestaurantModel> data = RestaurantModel.readResturants(getActivity()).all();
-        if(position!=0)
+        QuerySet<RestaurantModel> data = RestaurantModel.readRestaurants(getActivity()).all();
+        if (position != 0)
             data.filter(filter);
-        Log.i(TAG,"query: "+data.toString());
+        Log.i(TAG, "query: " + data.toString());
+        Log.i(TAG, "query: " + data.count());
 
 
         mAdapter.clear();

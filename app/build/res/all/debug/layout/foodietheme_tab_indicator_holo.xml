@@ -20,6 +20,7 @@
     style="@style/TabFoodieTheme"
     android:gravity="center">
 
+
     <ImageView
         android:id="@android:id/icon"
         android:layout_width="wrap_content"

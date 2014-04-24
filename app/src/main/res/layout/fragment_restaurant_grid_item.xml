@@ -14,28 +14,36 @@
         android:src="@drawable/imgc"
         android:layout_alignParentBottom="false"
         android:scaleType="fitXY" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/itemimg"
+            android:layout_alignLeft="@+id/itemimg"
+            android:layout_alignRight="@+id/itemimg"
+            android:background="#55000000"
 
-        <RatingBar
+            >
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar"
+                style="@style/RatingBarSmallFoodieTheme"
+                 />
+
+            <TextView
+            android:id="@+id/txt_line1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/ratingBar"
-            android:layout_alignLeft="@+id/txt_line1"
-            style="@style/RatingBarSmallFoodieTheme"
-            android:layout_above="@+id/txt_line1" />
-
-        <TextView
-        android:id="@+id/txt_line1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/white"
-        android:text="This is a very long piece of test to show that this imageview is working"
-        android:layout_alignLeft="@+id/itemimg"
-        android:maxLines="2"
-        android:layout_alignRight="@+id/itemimg"
-        android:layout_alignBottom="@+id/itemimg"
-            android:textStyle="bold"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp" />
+            android:textColor="@android:color/white"
+            android:text=""
+            android:maxLines="2"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignLeft="@+id/txt_line1"
+                android:layout_below="@+id/ratingBar"
+                />
+        </RelativeLayout>
 
 
 </RelativeLayout>

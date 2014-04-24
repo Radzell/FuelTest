@@ -31,7 +31,7 @@
         android:id="@+id/descriptioneditText"
         android:layout_below="@+id/titleeditText"
         android:lines="5"
-        android:hint="@string/comment"
+        android:hint="@string/description"
         android:gravity="top" />
 
     <RatingBar
@@ -52,7 +52,7 @@
         android:textSize="40sp"
         android:textStyle="bold"
         android:background="@drawable/imgd"
-        android:text="Choose A Image" />
+        android:text="@string/chooseanimage" />
 
 
 

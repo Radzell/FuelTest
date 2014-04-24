@@ -23,4 +23,6 @@ dependencies {
     compile 'com.etsy.android.grid:library:1.0.4'
     // see changelog
     compile 'com.actionbarsherlock:actionbarsherlock-fest:4.4.0@jar'
+    compile 'com.squareup:otto:1.3.4'
+    compile 'com.squareup.picasso:picasso:2.2.0'
 }

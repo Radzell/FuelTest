@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="$com.appmunki.gigs.RestaurantGrid" >
     <!-- Search, should appear as action button -->
-    <item android:id="@+id/action_add_resturant"
+    <item android:id="@+id/action_add_restaurant"
         android:title="@string/add_restaurant"
         android:showAsAction="always" />
     <item android:id="@+id/action_all"

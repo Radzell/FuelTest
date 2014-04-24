@@ -8,13 +8,13 @@
     android:divider="?android:attr/dividerHorizontal"
     android:orientation="horizontal"
     android:showDividers="middle"
-    tools:context="com.appmunki.gigs.restaurant.RestaurantGridActivity" >
+    tools:context="com.appmunki.gigs.restaurant.RestaurantListActivity" >
 
    
 
     <fragment
-        android:id="@+id/resturant_grid"
-        android:name="com.appmunki.gigs.restaurant.RestaurantGridFragment"
+        android:id="@+id/restaurant_grid"
+        android:name="com.appmunki.gigs.restaurant.RestaurantListFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"

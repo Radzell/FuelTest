@@ -3,13 +3,15 @@ package com.appmunki.gigs.restaurant;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.NavUtils;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.appmunki.gigs.R;
+import com.appmunki.gigs.review.ReviewCreateActivity;
 
 /**
- * An activity representing a single Resturant detail screen. This activity is
+ * An activity representing a single Restaurant detail screen. This activity is
  * only used on handset devices. On tablet-size devices, item details are
  * presented side-by-side with a list of items in a
  * {@link RestaurantListActivity}.
@@ -28,36 +30,52 @@ public class RestaurantDetailActivity extends FragmentActivity {
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        // Create the detail fragment and add it to the activity
-        // using a fragment transaction.
-        Bundle arguments = new Bundle();
-        arguments.putString(
-                RestaurantDetailFragment.ARG_RESTAURANT_ID,
-                getIntent().getStringExtra(
-                        RestaurantDetailFragment.ARG_RESTAURANT_ID)
-        );
-        RestaurantDetailFragment fragment = new RestaurantDetailFragment();
-        fragment.setArguments(arguments);
-        getFragmentManager().beginTransaction()
-                .add(R.id.restaurant_detail_container, fragment).commit();
+        if (savedInstanceState == null) {
+            // Create the detail fragment and add it to the activity
+            // using a fragment transaction.
+            Bundle arguments = new Bundle();
+            arguments.putInt(
+                    RestaurantDetailFragment.ARG_RESTAURANT_ID,
+                    getIntent().getIntExtra(
+                            RestaurantDetailFragment.ARG_RESTAURANT_ID, -1)
+            );
+            RestaurantDetailFragment fragment = new RestaurantDetailFragment();
+            fragment.setArguments(arguments);
+            getFragmentManager().beginTransaction()
+                    .add(R.id.restaurant_detail_container, fragment).commit();
+        }
 
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.write_review_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    /**
+     * Starts the activity to write a review
+     */
+    private void writeReview() {
+        Intent intent = new Intent(this, ReviewCreateActivity.class);
+        intent.putExtra(RestaurantDetailFragment.ARG_RESTAURANT_ID, getIntent().getIntExtra(
+                RestaurantDetailFragment.ARG_RESTAURANT_ID, -1));
+
+        startActivity(intent);
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == android.R.id.home) {
-            // This ID represents the Home or Up button. In the case of this
-            // activity, the Up button is shown. Use NavUtils to allow users
-            // to navigate up one level in the application structure. For
-            // more details, see the Navigation pattern on Android Design:
-            //
-            // http://developer.android.com/design/patterns/navigation.html#up-vs-back
-            //
-            NavUtils.navigateUpTo(this, new Intent(this,
-                    RestaurantListActivity.class));
-            return true;
+
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.action_write_review:
+                writeReview();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
     }
 }

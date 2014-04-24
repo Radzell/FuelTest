@@ -21,9 +21,6 @@ public class ReviewCreateActivity extends Activity implements View.OnClickListen
     private EditText mTitleView;
     private EditText mCommentView;
     private RatingBar mRatingView;
-    private String mTitle;
-    private String mComment;
-    private double mRating;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +29,10 @@ public class ReviewCreateActivity extends Activity implements View.OnClickListen
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
-        if (getIntent().getExtras().containsKey(RestaurantDetailFragment.ARG_RESTAURANT_ID))
-            mRestaurant = RestaurantModel.readResturants(this).get(getIntent().getExtras().getInt(RestaurantDetailFragment.ARG_RESTAURANT_ID));
+        if (!getIntent().hasExtra(RestaurantDetailFragment.ARG_RESTAURANT_ID))
+            finish();
+
+        mRestaurant = RestaurantModel.readRestaurants(this).get(getIntent().getExtras().getInt(RestaurantDetailFragment.ARG_RESTAURANT_ID));
 
 
         mTitleView = (EditText) findViewById(R.id.titleeditText);
@@ -54,13 +53,16 @@ public class ReviewCreateActivity extends Activity implements View.OnClickListen
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle presses on the action bar items
         switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
             case R.id.action_done:
                 saveReview();
                 return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
-
     }
 
     private void saveReview() {
@@ -69,9 +71,9 @@ public class ReviewCreateActivity extends Activity implements View.OnClickListen
         mCommentView.setError(null);
 
         // Store values at the time of the login attempt.
-        mTitle = mTitleView.getText().toString();
-        mComment = mCommentView.getText().toString();
-        mRating = mRatingView.getRating();
+        String mTitle = mTitleView.getText().toString();
+        String mComment = mCommentView.getText().toString();
+        double mRating = mRatingView.getRating();
         boolean cancel = false;
         View focusView = null;
 
@@ -96,7 +98,11 @@ public class ReviewCreateActivity extends Activity implements View.OnClickListen
         } else {
             ReviewModel reviewModel = new ReviewModel(mTitle, mComment, mRating);
             reviewModel.setReviewedRestaurant(mRestaurant);
+
             reviewModel.save(this);
+
+            mRestaurant.setRating((reviewModel.getRating()+mRestaurant.getRating())/((double)mRestaurant.getReviewCount(this)+1));
+            mRestaurant.save(this);
             finish();
         }
     }

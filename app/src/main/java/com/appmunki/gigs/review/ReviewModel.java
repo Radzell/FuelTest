@@ -11,7 +11,7 @@ public class ReviewModel extends Model {
     protected CharField mTitle;
     protected CharField mComment;
     protected DoubleField mRating;
-    protected ForeignKeyField<RestaurantModel> mRestaurant;
+    protected ForeignKeyField<RestaurantModel> mRestaurantModel;
 
     // initializes the standard ID field
     // and sets it to autoincrement
@@ -20,7 +20,7 @@ public class ReviewModel extends Model {
         mTitle = new CharField();
         mComment = new CharField();
         mRating = new DoubleField();
-        mRestaurant = new ForeignKeyField<RestaurantModel>(RestaurantModel.class);
+        mRestaurantModel = new ForeignKeyField<RestaurantModel>(RestaurantModel.class);
 
     }
 
@@ -48,23 +48,23 @@ public class ReviewModel extends Model {
         this.mComment.set(pComment);
     }
 
-    public Double getRating() {
-        return mRating.get();
+    public double getRating() {
+        return mRating.get().doubleValue();
     }
 
-    public void setRating(Double pRatingS) {
+    public void setRating(double pRatingS) {
         this.mRating.set(pRatingS);
     }
 
     public void setReviewedRestaurant(int pID) {
-        mRestaurant.set(pID);
+        mRestaurantModel.set(pID);
     }
 
     public RestaurantModel getReviewedRestaurant() {
-        return mRestaurant.get();
+        return mRestaurantModel.get();
     }
 
     public void setReviewedRestaurant(RestaurantModel pRestaurant) {
-        mRestaurant.set(pRestaurant);
+        mRestaurantModel.set(pRestaurant);
     }
 }

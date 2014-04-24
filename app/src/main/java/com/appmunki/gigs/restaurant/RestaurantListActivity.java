@@ -4,7 +4,6 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -12,7 +11,7 @@ import android.view.MenuItem;
 import com.appmunki.gigs.R;
 
 /**
- * An activity representing a list of Resturants. This activity has different
+ * An activity representing a list of Restaurants. This activity has different
  * presentations for handset and tablet-size devices. On handsets, the activity
  * presents a list of items, which when touched, lead to a
  * {@link RestaurantDetailActivity} representing item details. On tablets, the
@@ -49,9 +48,6 @@ public class RestaurantListActivity extends Activity implements
         actionBar.setDisplayShowCustomEnabled(false);
         //actionBar.setDisplayOptions(actionBar.DISPLAY_SHOW_CUSTOM);
 
-        actionBar.setCustomView(getLayoutInflater().inflate(R.layout.actionbartitle, null));
-
-
     }
 
     @Override
@@ -76,7 +72,7 @@ public class RestaurantListActivity extends Activity implements
             case R.id.action_highly_Rated:
                 filter = 2;
                 break;
-            case R.id.action_add_resturant:
+            case R.id.action_add_restaurant:
                 Intent intent = new Intent(this, RestaurantCreateActivity.class);
                 startActivity(intent);
                 break;
@@ -85,7 +81,7 @@ public class RestaurantListActivity extends Activity implements
         }
 
         // Handle presses on the action bar items
-        RestaurantListFragment gridFragment = (RestaurantListFragment) getFragmentManager().findFragmentById(R.id.resturant_grid);
+        RestaurantListFragment gridFragment = (RestaurantListFragment) getFragmentManager().findFragmentById(R.id.restaurant_grid);
         gridFragment.filterRestaurants(filter);
 
         return true;
@@ -98,10 +94,10 @@ public class RestaurantListActivity extends Activity implements
      */
     @Override
     public void onItemSelected(int id) {
-        Log.i(TAG, "Item clicked");
 
         // In single-pane mode, simply start the detail activity
         // for the selected item ID.
+
         Intent detailIntent = new Intent(this,
                 RestaurantDetailActivity.class);
         detailIntent.putExtra(RestaurantDetailFragment.ARG_RESTAURANT_ID, id);
@@ -112,7 +108,7 @@ public class RestaurantListActivity extends Activity implements
 
     @Override
     public boolean onNavigationItemSelected(int position, long id) {
-        RestaurantListFragment gridFragment = (RestaurantListFragment) getFragmentManager().findFragmentById(R.id.resturant_grid);
+        RestaurantListFragment gridFragment = (RestaurantListFragment) getFragmentManager().findFragmentById(R.id.restaurant_grid);
 
         gridFragment.filterRestaurants(position);
         return false;

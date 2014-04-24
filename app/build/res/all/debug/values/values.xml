@@ -73,9 +73,13 @@
     <string name="action_submit">Submit</string>
     <string name="add_restaurant">Add Restaurant</string>
     <string name="app_name">Foodie</string>
+    <string name="appname">Foodie</string>
+    <string name="chooseanimage">Choose An Image</string>
+    <string name="chooseimage">Choose A Image</string>
     <string name="comment">Comment</string>
-    <string name="createrestaurant">Create Resturant</string>
+    <string name="createrestaurant">Create Restaurant</string>
     <string name="createreview">Create Review</string>
+    <string name="description">Description</string>
     <string name="done">Done</string>
     <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
@@ -87,6 +91,7 @@
     <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
+    <string name="error_invalid_real_number">This number should be positive</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="lastreview">Last Review</string>
@@ -110,6 +115,7 @@
     <eat-comment />
 
     <string name="rating">Rating</string>
+    <string name="reviews">Reviews</string>
     <string name="title">Title</string>
     <string name="title_activity_create_review">CreateReviewActivity</string>
     <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/strings_activity_login.xml -->
@@ -120,9 +126,10 @@
     <eat-comment />
 
     <string name="title_activity_restaurant_category_grid">RestaurantCategoryGrid</string>
-    <string name="title_resturant_detail">Resturant Detail</string>
-    <string name="title_resturant_list">Resturants</string>
+    <string name="title_restaurant_detail">Restaurant Detail</string>
+    <string name="title_restaurant_list">Restaurants</string>
     <string name="visits">Visits</string>
+    <string name="write_review">Write Review</string>
     <!-- From: file:/home/radzell/Gigs/app/src/main/res/values/styles_foodieactionbar.xml -->
     <eat-comment />
 

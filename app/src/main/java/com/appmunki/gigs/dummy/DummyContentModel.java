@@ -3,6 +3,7 @@ package com.appmunki.gigs.dummy;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.util.Log;
 
 import com.appmunki.gigs.R;
 import com.appmunki.gigs.restaurant.RestaurantModel;
@@ -19,11 +20,11 @@ import java.util.Random;
  * TODO: Replace all uses of this class before publishing your app.
  */
 public class DummyContentModel {
-
+    private static boolean debugging=false;
 
 	public static void createDummyContent(Context context) {
 		// Add 3 sample items.
-		if (RestaurantModel.readResturants(context).isEmpty()) {
+		if (RestaurantModel.readRestaurants(context).isEmpty()&&debugging) {
             DatabaseAdapter adapter = DatabaseAdapter.getInstance(context);
             adapter.beginTransaction();
 
@@ -44,7 +45,11 @@ public class DummyContentModel {
                 RestaurantModel rest = restaurantsList.get(i);
                 bitmap = BitmapFactory.decodeResource(context.getResources(), images[r.nextInt(6) ]);
                 rest.setPicture(bitmap);
-                rest.save(context,i);
+                if(rest.save(context)) {
+                    Log.i("TAG", "save");
+                }else{
+                    Log.i("TAG","not save");
+                }
             }
 
             adapter.commitTransaction();

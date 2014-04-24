@@ -9,6 +9,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
 import android.provider.MediaStore;
+import android.support.v4.app.NavUtils;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
@@ -20,6 +21,7 @@ import android.widget.EditText;
 import android.widget.RatingBar;
 
 import com.appmunki.gigs.R;
+import com.appmunki.gigs.utils.MySQLiteHelper;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -28,15 +30,11 @@ public class RestaurantCreateActivity extends Activity {
 
 
     private static final int SELECT_PICTURE = 1;
-    private String selectedImagePath;
-
     RestaurantModel mRestaurant;
+    private String selectedImagePath;
     private EditText mTitleView;
     private EditText mDescriptionView;
     private RatingBar mRatingView;
-    private String mTitle;
-    private String mDescription;
-    private double mRating;
     private Button mButtonView;
     private Bitmap mBitmap;
 
@@ -44,6 +42,8 @@ public class RestaurantCreateActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_restaurant_view);
+
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         mTitleView = (EditText) findViewById(R.id.titleeditText);
@@ -78,6 +78,18 @@ public class RestaurantCreateActivity extends Activity {
             case R.id.action_done:
                 saveRestaurant();
                 return true;
+            case android.R.id.home:
+                // This ID represents the Home or Up button. In the case of this
+                // activity, the Up button is shown. Use NavUtils to allow users
+                // to navigate up one level in the application structure. For
+                // more details, see the Navigation pattern on Android Design:
+                //
+                // http://developer.android.com/design/patterns/navigation.html#up-vs-back
+                //
+                NavUtils.navigateUpFromSameTask(this);
+
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -89,10 +101,10 @@ public class RestaurantCreateActivity extends Activity {
         mTitleView.setError(null);
         mDescriptionView.setError(null);
 
-        // Store values at the time of the login attempt.
-        mTitle = mTitleView.getText().toString();
-        mDescription = mDescriptionView.getText().toString();
-        mRating = mRatingView.getRating();
+        // Store values at the time of the login aString ttempt.
+        String mTitle = mTitleView.getText().toString();
+        String mDescription = mDescriptionView.getText().toString();
+        double mRating = mRatingView.getRating();
         boolean cancel = false;
         View focusView = null;
 
@@ -110,20 +122,20 @@ public class RestaurantCreateActivity extends Activity {
             cancel = true;
         }
 
-        if(mBitmap==null){
-            focusView = mButtonView;
-            cancel=true;
-        }
+
 
         if (cancel) {
             // There was an error; don't attempt save and focus the first
             // form field with an error.
             focusView.requestFocus();
         } else {
-            Log.i("TAG","bitmaps: "+mBitmap);
-            RestaurantModel restaurantModel = new RestaurantModel(mTitle,mDescription,mRating,0);
+
+
+            MySQLiteHelper.checkDB(this);
+            Log.i("TAG", "restaurant count:" + RestaurantModel.readRestaurants(this).all().count());
+            RestaurantModel restaurantModel = new RestaurantModel(mTitle, mDescription, mRating, 0);
             restaurantModel.setPicture(mBitmap);
-            restaurantModel.save(this,RestaurantModel.readResturants(this).all().count()+20);
+            restaurantModel.save(this);
 
             finish();
         }
@@ -163,10 +175,5 @@ public class RestaurantCreateActivity extends Activity {
             }
         }
     }
-
-
-
-
-
 
 }

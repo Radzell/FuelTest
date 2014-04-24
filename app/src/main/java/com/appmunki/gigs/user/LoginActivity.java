@@ -183,7 +183,6 @@ public class LoginActivity extends Activity {
             showProgress(true);
 
             LoginTask loginTask = new LoginTask(LoginActivity.this);
-            // loginTask.setMessageLoading("Logging in...");
             loginTask.execute(LOGIN_API_ENDPOINT_URL);
         }
     }
@@ -283,14 +282,16 @@ public class LoginActivity extends Activity {
      */
     private void createDb() {
         List<Class<? extends Model>> models = new ArrayList<Class<? extends Model>>();
-        // models.add(Campaign.class);
         models.add(RestaurantModel.class);
         models.add(ReviewModel.class);
 
-        DatabaseAdapter.setDatabaseName("GigsDB");
         DatabaseAdapter adapter = DatabaseAdapter
-                .getInstance(getApplicationContext());
+                .getInstance(this);
+        DatabaseAdapter.setDatabaseName("FoodieDB");
+        Log.i("TAG","name: "+DatabaseAdapter.getDatabaseName());
         adapter.setModels(models);
+
+        //MySQLiteHelper.checkDB(this);
 
         // Create Dummy Content
         DummyContentModel.createDummyContent(this);
@@ -377,7 +378,7 @@ public class LoginActivity extends Activity {
                     Intent intent = new Intent(getApplicationContext(),
                             RestaurantListActivity.class);
                     startActivity(intent);
-                    //finish();
+                    finish();
                     clearFields();
 
                 }
